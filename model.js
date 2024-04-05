@@ -30,18 +30,21 @@ const model = {
           artPicture: 'Vannskulpturinnstallasjon',
           aboutPictureText: 'En interaktiv dialog om japonisme, orientalisme, og oksidentalisme mellom Japan og Holland.',
           category: "skulptur",
+          artistName: "Martini the Drink",
         },
         {
           artId: 'to the desert',
           artPicture: 'Setninger av lys på vegger',
           aboutPictureText: 'Et bevegelig dikt skapt med metall som klipper skygger og lys på veggene, om tapt kjærlighet og meningen med det.',
           category: "avantgarde/eksperimentelt",
+          artistName: "Rebecka a baguette-eater",
         },
         {
           artId: 'strandsstudie',
           artPicture: 'Bilder av vannmalingsstudie',
           aboutPictureText: 'Et tidligere vannmalinggstudie som jeg har klippet opp. En lang stund var ingen interreserte i kunsten min, og så ble dette av alle verkene mine bemerket: et studie.',
           category: "fotografi",
+          artistName: "Marius in Boots",
         },
       ],
       ourArtists:[
@@ -60,7 +63,7 @@ const model = {
          profilePicture: 'popcat.png',
          aboutText: '',
        },
-     ],
+      ],
     },
   }
     // konstant synelig i alle skjermbilder
@@ -126,9 +129,7 @@ const model = {
 
         /*  Hvordan skal folk kunne kjøpe ting på nettsiden? Via galleriet, via vipps, annet?
 
-        Hva slags type auksjon var det snakk om? Individuell auksjon som på ebay eller samlet
-        auksjon der hovedadministratøren skal kunne kontrollere som i en auksjon i
-        virkeligheten?
+        Hva slags type auksjon var det snakk om? Individuell auksjon som på ebay eller samlet auksjon der hovedadministratøren skal kunne kontrollere som i en auksjon i virkeligheten?
             */
     // },
 
