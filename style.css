@@ -1,0 +1,19 @@
+table{
+    height: 100cap; width: 100%; border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid purple;
+}
+#titleBarr{
+    height:80px;
+}
+#navigationBar{
+    height: 40px;
+}
+
+td.midlertidig_navn{
+    text-align: right; padding-right: 10px;
+}
+td.midlrtidig_navn_numero_dos{
+    text-align: left; padding-left: 10px;
+}

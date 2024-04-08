@@ -1,3 +1,4 @@
+let app = document.getElementById("app")
 const model = {
     app: {
         user: null,
@@ -19,35 +20,42 @@ const model = {
 
         auctionView: {
           bidAmount: null,
-        }
+          newBid: [
+            {currentBid:''},
+            {currentBidder:''},
+            // max and minimum price-input
+          ],
+        },
     },
     data: {
-      filters: ["maleri","treverk","fotografi","litteratur","avantgarde/eksperimentelt",
+      categories: ["maleri","treverk","fotografi","litteratur","avantgarde/eksperimentelt",
       "skulptur", "strikketøy","rosemaling", "collage"],
-      art: [
+      artObject: [
         {
           artId: 'The Wave',
           artPicture: 'Vannskulpturinnstallasjon',
           aboutPictureText: 'En interaktiv dialog om japonisme, orientalisme, og oksidentalisme mellom Japan og Holland.',
-          category: "skulptur",
+          category: model.data.categories[5],
           artistName: "Martini the Drink",
         },
         {
           artId: 'to the desert',
           artPicture: 'Setninger av lys på vegger',
           aboutPictureText: 'Et bevegelig dikt skapt med metall som klipper skygger og lys på veggene, om tapt kjærlighet og meningen med det.',
-          category: "avantgarde/eksperimentelt",
+          category: model.data.categories[4],
           artistName: "Rebecka a baguette-eater",
         },
         {
           artId: 'strandsstudie',
           artPicture: 'Bilder av vannmalingsstudie',
           aboutPictureText: 'Et tidligere vannmalinggstudie som jeg har klippet opp. En lang stund var ingen interreserte i kunsten min, og så ble dette av alle verkene mine bemerket: et studie.',
-          category: "fotografi",
+          category: model.data.categories[2],
           artistName: "Marius in Boots",
         },
       ],
-      ourArtists:[
+      ourArtists:[ // For å hente så må man bruke model.data.ourArtits[3]
+      // FUNKSJONSSPØRSMÅL: hvordan opprettholder vi galleriet hvis enkeltobjekter blir trukket vekk?
+      // IDE: fjerne innholdet men ikke objektet; send den til gravplassen
         {
          artistId: 'Martini the Drink',
          profilePicture: 'A lily',
@@ -63,6 +71,25 @@ const model = {
          profilePicture: 'popcat.png',
          aboutText: '',
        },
+      ],
+      auctionObjects:[
+        {
+          seller: '',
+          artId: '',
+          timeLeft: '',
+          activeBid: '',
+          newBid: '',
+          bidders: [''],
+          previousBids: [''],
+        },
+      ],
+      newsObject:[
+        {
+        articleTitle:'',
+        articleImg: '',
+        articleOverview:'',
+        articleText: '',
+        },
       ],
     },
   }
