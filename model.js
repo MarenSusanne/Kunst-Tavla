@@ -92,6 +92,8 @@ const model = {
         },
       ],
     },
+
+    // hei hei 
   }
     // konstant synelig i alle skjermbilder
     // navBar: {
