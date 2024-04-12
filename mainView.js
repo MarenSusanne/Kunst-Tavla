@@ -22,11 +22,7 @@ function updateMainView(){
             </span>
         </div>
         <div class="item item-3">
-            <div id="appingtonTheMother">
-                <div id="appingtonTheSecond">
-                HIT OG HIT RAAAAAAAAH
-                </div>
-            </div>
+            <div id="appingtonTheMother"></div>
         </div>
         <div class="item item-4"></div>
         <div class="item item-5"></div>

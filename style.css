@@ -43,7 +43,7 @@ body{
 }
 
 .item {
-    border: 1px solid purple;
+    border: 1px solid orange;
 }
 
 .item-1 {
@@ -109,15 +109,37 @@ body{
     border:1px solid darkred;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 
 }
 #appingtonTheSecond{
-    background-color: transparent;
+    background-color: #d6e6e6;
+    opacity: 40%;
     margin-bottom: 10px;
     height: 540px; width: 894px;
     border: 1px solid darkgrey;
+    display: grid;
+    grid-template-rows: 286px 254px;
+    grid-template-columns: 418px 476px;
+    grid-template-areas:
+        'auksjoner auksjoner'
+        'nyheter velkommen';
 }
+
+    #auctions{
+        grid-area: auksjoner;
+        margin-bottom: 10px;
+    } 
+    
+    #news{
+        grid-area: nyheter;
+        margin-right: 10px;
+    } 
+    
+    #welcome{
+        grid-area: velkommen;
+        margin-left: 4px;
+    }
 
 .item-4{
     grid-area: border_L;
@@ -152,7 +174,6 @@ body{
     display: flex;
     justify-content: center;
     }
-
 
 
 
