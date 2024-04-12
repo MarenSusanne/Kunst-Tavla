@@ -10,11 +10,11 @@ body{
 
 
 #app{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-top: -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -9px;
 }
 
 .container {
@@ -75,6 +75,8 @@ margin-top: -9px;
         .tmtm-L:hover{
             color: goldenrod;
             transition: 0.5s;
+        }.tmtm-L:active{
+            color: #e7d3a0;
         }
     .tmtm-R{
         display: flex;
@@ -85,6 +87,8 @@ margin-top: -9px;
         .tmtm-R:hover{
             color: goldenrod;
             transition: 0.5s;
+        }.tmtm-R:active{
+        color: #e7d3a0;
         }
 
 .item-2 {
