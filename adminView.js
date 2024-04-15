@@ -1,1 +1,4 @@
-//hei
+//updateAdminView()
+function updateAdminView(){
+    
+}

@@ -1,7 +1,7 @@
-updateInnerMainView()
+//updateInnerMainView()
 function updateInnerMainView(){
-    document.getElementById("appingtonTheMother").innerHTML=/*HTML*/`
-    <div id="appingtonTheSecond">
+    document.getElementById("appingtonTheSecond").innerHTML=/*HTML*/`
+    <div id="appingtonTheThird">
         <div class="item" id="auctions">
             <h1>Auksjoner</h1>
         </div>

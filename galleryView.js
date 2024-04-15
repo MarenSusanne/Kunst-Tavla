@@ -1,0 +1,4 @@
+//updateGalleryView()
+function updateGalleryView(){
+
+}

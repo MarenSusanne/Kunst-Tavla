@@ -4,25 +4,27 @@ function updateMainView(){
     
     <div class="container">
         <div class="item item-1">
-            <div id="logoGoHere">Logo/navn</div>
+            <div id="logoGoHere" onclick="updateInnerMainView()">Logo/navn</div>
             <input type="text" id="søkefeltHer" value="Søk her..."/>
         </div>
         <div class="item item-2">
             <span class="navigationBar">
-                <div class="tmtm-L">Kjøp og auksjon</div>
+                <div class="tmtm-L" onclick="updateTradeView()">Kjøp og auksjon</div>
                 <div class="brdrL">
-                    <div class="tmtm-L">Kunstnerne våre</div>
+                    <div class="tmtm-L" onclick="updateArtistView()">Kunstnerne våre</div>
                 </div>
                 <div class="brdrL">
-                    <div class="tmtm-R">Galleri og arkiv</div>
+                    <div class="tmtm-R" onclick="updateGalleryAndArchiveView()">Galleri og arkiv</div>
                 </div>
                 <div class="brdrL">
-                    <div class="tmtm-R">Registrering/Profil</div>
+                    <div class="tmtm-R" onclick="updateProfileView()">Registrering/Profil</div>
                 </div>
             </span>
         </div>
         <div class="item item-3">
-            <div id="appingtonTheMother"></div>
+            <div id="appingtonTheMother">
+                <div id="appingtonTheSecond"></div>
+            </div>
         </div>
         <div class="item item-4"></div>
         <div class="item item-5"></div>

@@ -115,9 +115,12 @@ body{
 #appingtonTheSecond{
     background-color: #d6e6e6;
     opacity: 40%;
-    margin-bottom: 10px;
-    height: 540px; width: 894px;
+    margin-bottom: 0px;
+    height: 554px; width: 882px;
     border: 1px solid darkgrey;
+}
+
+#appingtonTheThird {
     display: grid;
     grid-template-rows: 286px 254px;
     grid-template-columns: 418px 476px;
@@ -175,6 +178,38 @@ body{
     justify-content: center;
     }
 
+/*ARTIST VIEW STYLINGS*/
+
+#para {
+    height: 554px; width: 882px;
+    overflow: scroll;
+}
+
+.artistRow{
+    border: 1px solid purple; height: 166px; margin-bottom: 12px;
+    display: flex;
+    flex-direction: row; gap: 15px;
+}
+
+.artistProfileProportions {
+    border: 1px solid blue; background-color: blanchedalmond;
+    /*height: max-content;*/
+    width: 186px; height: 164px;
+}
+h2 {
+    margin-bottom: 0px;
+}
+
+/*GALLERY AND ARCHIVE BIEW STYLINGS*/
+
+.toDelt{
+    display: flex;
+    flex-direction: row;
+    
+}
+.delt_i_to{
+    border: 1px solid darkolivegreen;
+}
 
 
 

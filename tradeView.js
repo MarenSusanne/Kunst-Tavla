@@ -1,0 +1,2 @@
+//updateTradeView()
+function updateTradeView(){}
