@@ -1,5 +1,5 @@
 updateMainView()
-function updateMainView(){
+function updateMainView() {
     app.innerHTML = /*HTML*/ `
     
     <div class="container">
@@ -9,7 +9,7 @@ function updateMainView(){
         </div>
         <div class="item item-2">
             <span class="navigationBar">
-                <div class="tmtm-L" onclick="updateTradeView()">Kjøp og auksjon</div>
+                <div class="tmtm-L" onclick="updateBuyAndAuction()">Kjøp og auksjon</div>
                 <div class="brdrL">
                     <div class="tmtm-L" onclick="updateArtistView()">Kunstnerne våre</div>
                 </div>

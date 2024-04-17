@@ -1,7 +1,8 @@
-body{
-   background-image: url("skjermbilde.png");
+body {
+    background-image: url("skjermbilde.png");
     background-repeat: no-repeat;
-    background-size: 1190px;
+    background-size: 1196px;
+    margin-left: 14px;
     background-position-x: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #1b1b1b;
@@ -9,7 +10,7 @@ body{
 
 
 
-#app{
+#app {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +30,7 @@ body{
     /*background-color: #e9e8e5;*/
 }
 
-#logoGoHere{
+#logoGoHere {
     border: 1px solid;
     position: absolute;
     margin: 30px 0px 0px 324px;
@@ -50,77 +51,95 @@ body{
     grid-area: header;
 }
 
-#søkefeltHer{
+#søkefeltHer {
     margin-top: 10px;
     margin-left: 862px;
-    width: 175px; height: 30px;
+    width: 175px;
+    height: 30px;
 }
-    .navigationBar{
-        /*justify-content: space-between;*/
-        display: grid;
-        grid-template-rows: 60px;
-        grid-template-columns: 266px 266px 266px 266px;
-        background-color: #faf8fa;
-        }
 
-    .brdrL{
-        border-left: 1px solid green;
-    }
-    .tmtm-L{
-        display: flex;
-        justify-content: end;
-        margin-top: 15px;
-        margin-right: 15px;
-        font-size: 22px;}
-        .tmtm-L:hover{
-            color: goldenrod;
-            transition: 0.5s;
-        }.tmtm-L:active{
-            color: #e7d3a0;
-        }
-    .tmtm-R{
-        display: flex;
-        justify-content: start;
-        margin-top: 15px;
-        margin-left: 15px;
-        font-size: 22px;}
-        .tmtm-R:hover{
-            color: goldenrod;
-            transition: 0.5s;
-        }.tmtm-R:active{
-        color: #e7d3a0;
-        }
+.navigationBar {
+    /*justify-content: space-between;*/
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 266px 266px 266px 266px;
+    background-color: #faf8fa;
+}
+
+.brdrL {
+    border-left: 1px solid green;
+}
+
+.tmtm-L {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.tmtm-L:hover {
+    color: goldenrod;
+    transition: 0.5s;
+}
+
+.tmtm-L:active {
+    color: #e7d3a0;
+}
+
+.tmtm-R {
+    display: flex;
+    justify-content: start;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+.tmtm-R:hover {
+    color: goldenrod;
+    transition: 0.5s;
+}
+
+.tmtm-R:active {
+    color: #e7d3a0;
+}
 
 .item-2 {
     grid-area: navigationBar;
 }
 
-.item-3{
+.item-3 {
     grid-area: main;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#appingtonTheMother{
+#appingtonTheMother {
     background-color: transparent;
     margin-top: 30px;
-    height: 595px; width: 966px;
-    border:1px solid darkred;
+    height: 595px;
+    width: 966px;
+    border: 1px solid darkred;
     display: flex;
     justify-content: center;
     align-items: center
-
 }
-#appingtonTheSecond{
-    background-color: #d6e6e6;
-    opacity: 40%;
+
+#appingtonTheSecond {
+    background-color:
+        /* #d6e6e6*/
+        #ebebeb;
+    /*opacity: 40%;*/
     margin-bottom: 0px;
-    height: 554px; width: 882px;
+    height: 554px;
+    width: 882px;
     border: 1px solid darkgrey;
 }
 
-#appingtonTheThird {
+/*INNER MAIN VIEW STYLING*/
+
+#appingtonTheInnerMain {
     display: grid;
     grid-template-rows: 286px 254px;
     grid-template-columns: 418px 476px;
@@ -129,26 +148,26 @@ body{
         'nyheter velkommen';
 }
 
-    #auctions{
-        grid-area: auksjoner;
-        margin-bottom: 10px;
-    } 
-    
-    #news{
-        grid-area: nyheter;
-        margin-right: 10px;
-    } 
-    
-    #welcome{
-        grid-area: velkommen;
-        margin-left: 4px;
-    }
+#auctions {
+    grid-area: auksjoner;
+    margin-bottom: 10px;
+}
 
-.item-4{
+#news {
+    grid-area: nyheter;
+    margin-right: 10px;
+}
+
+#welcome {
+    grid-area: velkommen;
+    margin-left: 4px;
+}
+
+.item-4 {
     grid-area: border_L;
 }
 
-.item-5{
+.item-5 {
     grid-area: border_R;
 }
 
@@ -162,57 +181,144 @@ body{
     grid-template-areas: 'left center right';
     font-size: 22px;
 }
-    #aboutPage{
+
+#aboutPage {
     grid-area: left;
     display: flex;
     justify-content: center;
-    }
-    #aPage{
+}
+
+#aPage {
     grid-area: center;
     display: flex;
     justify-content: center;
-    }
-    #bPage{
+}
+
+#bPage {
     grid-area: right;
     display: flex;
     justify-content: center;
-    }
+}
 
 /*ARTIST VIEW STYLINGS*/
 
 #para {
-    height: 554px; width: 882px;
+    height: 554px;
+    width: 882px;
     overflow: scroll;
 }
 
-.artistRow{
-    border: 1px solid purple; height: 166px; margin-bottom: 12px;
+.artistRow {
+    border: 1px solid purple;
+    height: 166px;
+    margin-bottom: 12px;
     display: flex;
-    flex-direction: row; gap: 15px;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .artistProfileProportions {
-    border: 1px solid blue; background-color: blanchedalmond;
+    border: 1px solid blue;
+    background-color: blanchedalmond;
     /*height: max-content;*/
-    width: 186px; height: 164px;
+    width: 186px;
+    height: 164px;
 }
+
 h2 {
     margin-bottom: 0px;
 }
 
 /*GALLERY AND ARCHIVE BIEW STYLINGS*/
 
-.toDelt{
+.toDelt {
+    display: grid;
+    border: 1px solid orchid;
+    width: auto;
+    height: 554px;
+    grid-template-rows: 1fr 220px 1fr;
+    grid-template-columns: 1fr 320px 146px 320px 1fr;
+    /*flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 554px;
+    width: 882px;
+    padding: 5px;*/
+}
+
+.delt {
+    border: 4px solid darkolivegreen;
+}
+
+.delt_1 {
+    grid-row: 2/2;
+    grid-column: 2/3;
+    /*margin: 70px;
+    width: 400px;
+    height: 200px;
     display: flex;
-    flex-direction: row;
-    
-}
-.delt_i_to{
-    border: 1px solid darkolivegreen;
+    justify-content: center;
+    align-items: center;*/
 }
 
+.delt_2 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
 
 
+/*PROFILE VIEW STYLINGS*/
+
+#appingtonTheProfile {
+    width: auto;
+    height: 554px;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 50px 1fr 30px 1fr 50px;
+}
+
+#header_profileMaking {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#registerUser {
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+#header_profileLogIn {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+#logInRegisteredUser {
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+.bitOfAir {
+    padding: 8px;
+}
+
+#profileInnerBorder {
+    grid-row: 1/4;
+    grid-column: 3/4;
+    background-color: #b6aa9b;
+}
+
+/*BUY ONLY STYLINGS*/
+
+.container_mainGallery {
+    display: grid;
+    width: auto;
+    grid-template-rows: 40px, 200px;
+    grid-template-columns: 1fr;
+}
+
+.standardGalleryImageSize {
+    height: 150px;
+}
 
 /*table{
     height: 100cap; width: 100%; border-collapse: collapse;

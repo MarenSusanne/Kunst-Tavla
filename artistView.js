@@ -1,6 +1,6 @@
-
-function updateArtistView(){
-    document.getElementById("appingtonTheSecond").innerHTML=/*HTML*/`
+//updateArtistView()
+function updateArtistView() {
+    document.getElementById("appingtonTheSecond").innerHTML =/*HTML*/`
     <div id="para">
         <div class="artistRow" id="kunstner_1">
             <div class="artistProfileProportions">picture</div>
@@ -33,4 +33,5 @@ function updateArtistView(){
         </div>
     </div>
     </div>
-    `;}
+    `;
+}
