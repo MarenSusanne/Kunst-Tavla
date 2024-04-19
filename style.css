@@ -320,6 +320,34 @@ h2 {
     height: 150px;
 }
 
+/*USER PROFILE STYLINGS*/
+.delt_i_2_horisontalt{
+    display: grid;
+    width: auto; height: 554px;
+    grid-template-rows: 3; grid-template-columns: 1;
+    gap: 10px;
+}
+.hori1{
+    grid-row: 1fr;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+.hori2{
+    grid-row: 1fr;
+    padding: 10px;
+    background-color: white;
+}
+/* Maren og subgrid*/
+
+.subtitle{
+    color: #b7b7b7 ; font-style: italic;
+}
+
+.userProfilePicture{
+    background-color: #b6aa9b;
+    width: 80px; height: 150px;
+}
+
 /*table{
     height: 100cap; width: 100%; border-collapse: collapse;
 }

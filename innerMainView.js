@@ -1,4 +1,4 @@
-updateInnerMainView()
+//updateInnerMainView()
 function updateInnerMainView() {
     document.getElementById("appingtonTheSecond").innerHTML =/*HTML*/`
     <div id="appingtonTheInnerMain">

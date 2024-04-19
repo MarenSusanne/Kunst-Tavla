@@ -5,7 +5,7 @@ function updateMainView() {
     <div class="container">
         <div class="item item-1">
             <div id="logoGoHere" onclick="updateInnerMainView()">Logo/navn</div>
-            <input type="text" id="søkefeltHer" value="Søk her..."/>
+            <input type="text" id="søkefeltHer" placeholder="Søk her..."/>
         </div>
         <div class="item item-2">
             <span class="navigationBar">
