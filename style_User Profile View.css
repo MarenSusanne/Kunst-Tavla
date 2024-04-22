@@ -1,0 +1,29 @@
+.delt_i_2_horisontalt{
+    display: grid;
+    width: auto; height: 554px;
+    grid-template-rows: 7fr 4fr; grid-template-columns: 1;
+    gap: 10px;
+}
+.hori1{
+    padding: 10px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    max-width: 860px;
+}
+.hori2{
+    padding: 10px;
+    background-color: white;
+}
+/* Maren og subgrid*/
+
+.subtitle{
+    color: #b7b7b7 ; font-style: italic;
+}
+/*#artistInfo{
+ 
+}*/
+.userProfilePicture{
+    background-color: #b6aa9b;
+    width: 560px; height: auto;
+}

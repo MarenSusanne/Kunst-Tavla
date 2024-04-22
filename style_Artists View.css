@@ -1,0 +1,26 @@
+#para {
+    height: 554px;
+    width: 882px;
+    overflow: auto;
+}
+
+.artistRow {
+    border: 1px solid purple;
+    height: 166px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.artistProfileProportions {
+    border: 1px solid blue;
+    background-color: blanchedalmond;
+    /*height: max-content;*/
+    width: 186px;
+    height: 164px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}

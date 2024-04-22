@@ -1,0 +1,223 @@
+body {
+    background-image: url("skjermbilde.png");
+    background-repeat: no-repeat;
+    background-size: 1196px;
+    margin-left: 14px;
+    background-position-x: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1b1b1b;
+}
+
+
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -9px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 165px 60px 625px 35px;
+    grid-template-columns: 65px 1064px 65px;
+    grid-template-areas:
+        'border_L header border_R'
+        'border_L navigationBar border_R'
+        'border_L main border_R'
+        'border_L footer border_R';
+    /*background-color: #e9e8e5;*/
+}
+
+#logoGoHere {
+    border: 1px solid;
+    position: absolute;
+    margin: 30px 0px 0px 324px;
+    height: 120px;
+    width: 417px;
+    border-radius: 60% 60% 60% 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.item {
+    border: 1px solid orange;
+}
+
+.item-1 {
+    grid-area: header;
+}
+
+#søkefeltHer {
+    margin-top: 10px;
+    margin-left: 862px;
+    width: 175px;
+    height: 30px;
+}
+
+.navigationBar {
+    /*justify-content: space-between;*/
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 266px 266px 266px 266px;
+    background-color: #faf8fa;
+}
+
+.brdrL {
+    border-left: 1px solid green;
+}
+
+.tmtm-L {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.tmtm-L:hover {
+    color: goldenrod;
+    transition: 0.5s;
+}
+
+.tmtm-L:active {
+    color: #e7d3a0;
+}
+
+.tmtm-R {
+    display: flex;
+    justify-content: start;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+.tmtm-R:hover {
+    color: goldenrod;
+    transition: 0.5s;
+}
+
+.tmtm-R:active {
+    color: #e7d3a0;
+}
+
+.item-2 {
+    grid-area: navigationBar;
+}
+
+.item-3 {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#appingtonTheMother {
+    background-color: transparent;
+    margin-top: 30px;
+    height: 595px;
+    width: 966px;
+    border: 1px solid darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#appingtonTheSecond {
+    background-color:
+        /* #d6e6e6*/
+        #ebebeb;
+    /*opacity: 40%;*/
+    margin-bottom: 0px;
+    height: 554px;
+    width: 882px;
+    border: 1px solid darkgrey;
+}
+
+/*INNER MAIN VIEW STYLING*/
+
+#appingtonTheInnerMain {
+    display: grid;
+    grid-template-rows: 286px 254px;
+    grid-template-columns: 418px 476px;
+    grid-template-areas:
+        'auksjoner auksjoner'
+        'nyheter velkommen';
+}
+
+#auctions {
+    grid-area: auksjoner;
+    margin-bottom: 10px;
+}
+
+#news {
+    grid-area: nyheter;
+    margin-right: 10px;
+}
+
+#welcome {
+    grid-area: velkommen;
+    margin-left: 4px;
+}
+
+.item-4 {
+    grid-area: border_L;
+}
+
+.item-5 {
+    grid-area: border_R;
+}
+
+.item-6 {
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 35px;
+    grid-template-columns: 275px 160px 275px;
+    grid-template-areas: 'left center right';
+    font-size: 22px;
+}
+
+#aboutPage {
+    grid-area: left;
+    display: flex;
+    justify-content: center;
+}
+
+#aPage {
+    grid-area: center;
+    display: flex;
+    justify-content: center;
+}
+
+#bPage {
+    grid-area: right;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*table{
+    height: 100cap; width: 100%; border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid purple;
+}
+#titleBarr{
+    height:80px;
+}
+#navigationBar{
+    height: 40px;
+}
+
+td.midlertidig_navn{
+    text-align: right; padding-right: 10px;
+}
+td.midlrtidig_navn_numero_dos{
+    text-align: left; padding-left: 10px;
+}*/

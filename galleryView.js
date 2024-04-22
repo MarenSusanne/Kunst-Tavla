@@ -13,10 +13,10 @@ function updateGalleryView() {
   }
   document.getElementById('appingtonTheSecond').innerHTML = /*HTML*/ `
     <div class="container_mainGallery">
-        <div>
+        <div id="galleryTitle">
             <h2>Galleri</h2>
         </div>
-        <div>
+        <div id="printGallery">
             ${print}
         </div>
     </div>

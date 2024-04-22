@@ -1,0 +1,21 @@
+.container_mainGallery {
+    display: grid;
+    width: auto;
+    grid-template-rows: 40px, 200px;
+    grid-template-columns: 1fr;
+}
+#printGallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+    overflow: auto;
+}
+.standardGalleryImageSize {
+    height: 150px;
+}
+#galleryTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
