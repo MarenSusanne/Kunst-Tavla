@@ -20,7 +20,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 165px 60px 625px 35px;
+    grid-template-rows: 203px /*tidligere 165px*/ 60px 625px 35px;
     grid-template-columns: 65px 1064px 65px;
     grid-template-areas:
         'border_L header border_R'
@@ -44,14 +44,19 @@ body {
 }
 
 .item {
-    border: 1px solid orange;
+    border: 1px solid darkgray;
 }
 
 .item-1 {
     grid-area: header;
+    background-image: url("visuell_utvikling/rosemalelogo_2i.png");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 #søkefeltHer {
+    border: transparent;
+    background-color: transparent;
     margin-top: 10px;
     margin-left: 862px;
     width: 175px;
@@ -63,11 +68,11 @@ body {
     display: grid;
     grid-template-rows: 60px;
     grid-template-columns: 266px 266px 266px 266px;
-    background-color: #faf8fa;
+    background-color: #ffffff;
 }
 
 .brdrL {
-    border-left: 1px solid green;
+    border-left: 1px solid black;
 }
 
 .tmtm-L {
@@ -113,7 +118,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e7d3a0;
+    background-color: #efefefff;
 }
 
 #appingtonTheMother {
@@ -121,7 +126,7 @@ body {
     margin-top: 30px;
     height: 595px;
     width: 966px;
-    border: 1px solid darkred;
+    border: 1px solid darkgrey;
     display: flex;
     justify-content: center;
     align-items: center
@@ -164,6 +169,7 @@ body {
 #welcome {
     grid-area: velkommen;
     margin-left: 4px;
+    background-color: #f3f3f3ff;
 }
 
 .item-4 {
@@ -183,6 +189,7 @@ body {
     grid-template-columns: 275px 160px 275px;
     grid-template-areas: 'left center right';
     font-size: 22px;
+    background-color: #efefefff;
 }
 
 #aboutPage {

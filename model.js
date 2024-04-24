@@ -2,13 +2,16 @@ let app = document.getElementById("app")
 const model = {
     app: {
         user: null,
+        page: 'profile',
     },
     inputs: {
         searchBar: null, //'artItems','artists','detailed search',
         chosenFilter: "maleri",
         loginView: {
+          errorMessage: '',
           userName: null,
           password: null,
+          
         },
 
         registerUserView: {
@@ -56,7 +59,7 @@ const model = {
       }, 
       {
         userNameInput: 'morris',
-        passwordInput: 'passord',
+        passwordInput: 'm',
         fullNameInput: 'Martin M. Ristvedt',
         profilePicture: 'https://i.ytimg.com/vi/Oan1YaBSoY0/maxresdefault.jpg',
       },
