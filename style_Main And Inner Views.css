@@ -20,8 +20,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 203px /*tidligere 165px*/ 60px 625px 35px;
-    grid-template-columns: 65px 1064px 65px;
+    grid-template-rows: 183px /*tidligere 165px*/ 60px 625px 35px;
+    grid-template-columns: 99px 1064px 99px;
     grid-template-areas:
         'border_L header border_R'
         'border_L navigationBar border_R'
@@ -49,18 +49,17 @@ body {
 
 .item-1 {
     grid-area: header;
-    background-image: url("visuell_utvikling/rosemalelogo_2i.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-image: url("visuell_utvikling/rosemaling_header_woBell_wText.png");
+    background-size:100%;
 }
 
 #søkefeltHer {
     border: transparent;
     background-color: transparent;
-    margin-top: 10px;
-    margin-left: 862px;
-    width: 175px;
-    height: 30px;
+    margin-top: 15px;
+    margin-left: 865px;
+    width: 163px;
+    height: 24px;
 }
 
 .navigationBar {
@@ -69,6 +68,20 @@ body {
     grid-template-rows: 60px;
     grid-template-columns: 266px 266px 266px 266px;
     background-color: #ffffff;
+}
+
+.roseborderL {
+    background-image: url(visuell_utvikling/rosemaling_border.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-color: pink;
+}
+.roseborderR {
+    background-image: url(visuell_utvikling/rosemaling_border.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    transform: scaleX(-1);
+    background-color: lightsteelblue;
 }
 
 .brdrL {

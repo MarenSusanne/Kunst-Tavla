@@ -26,8 +26,8 @@ function updateMainView() {
                 <div id="appingtonTheSecond"></div>
             </div>
         </div>
-        <div class="item item-4"></div>
-        <div class="item item-5"></div>
+        <div class="item item-4 roseborderL"></div>
+        <div class="item item-5 roseborderR"></div>
         <div class="item item-6">
             <span id="aboutPage">Om oss</span>
             <span class="brdrL">
