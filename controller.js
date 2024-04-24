@@ -1,3 +1,5 @@
+
+//adminCheckpoint
 function acceptInput(index) {
   model.data.salesObjects.push(model.data.salesObjectsToCheck[index])
   updateAdminCheckpointView()
@@ -5,11 +7,11 @@ function acceptInput(index) {
 }
 
 function declineInput(index) {
-    model.data.salesObjectsToCheck.splice(index, 1);
+    model.data.salesObjectsToCheck.splice(index);
     updateAdminCheckpointView()
 }
 
-
+//addSalesobjekt
 function addNewItem() {
   model.data.salesObjectsToCheck.push(model.data.newInputSalesObjekt)
   addSaleObjekt()

@@ -1,5 +1,5 @@
 body {
-    background-image: url("skjermbilde.png");
+    /*background-image: url("skjermbilde.png");*/
     background-repeat: no-repeat;
     background-size: 1196px;
     margin-left: 14px;
@@ -113,10 +113,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e7d3a0;
 }
 
 #appingtonTheMother {
-    background-color: transparent;
+    background-color: #efefefff;
     margin-top: 30px;
     height: 595px;
     width: 966px;
@@ -129,7 +130,7 @@ body {
 #appingtonTheSecond {
     background-color:
         /* #d6e6e6*/
-        #ebebeb;
+        #efefefff;
     /*opacity: 40%;*/
     margin-bottom: 0px;
     height: 554px;
@@ -141,8 +142,8 @@ body {
 
 #appingtonTheInnerMain {
     display: grid;
-    grid-template-rows: 286px 254px;
-    grid-template-columns: 418px 476px;
+    grid-template-rows: 290px 264px;
+    grid-template-columns: 9fr 10fr;
     grid-template-areas:
         'auksjoner auksjoner'
         'nyheter velkommen';
@@ -151,11 +152,13 @@ body {
 #auctions {
     grid-area: auksjoner;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 #news {
     grid-area: nyheter;
     margin-right: 10px;
+    background-color: white;
 }
 
 #welcome {

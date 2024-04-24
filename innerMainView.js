@@ -4,7 +4,7 @@ function updateInnerMainView() {
     <div id="appingtonTheInnerMain">
         <div class="item" id="auctions">
             <h1>Auksjoner</h1>
-            <button onclick="updateAdminCheckpointView()">AdminView</button>
+           
             <button onclick="addSaleObjekt()">Legg Til Objekt</button>
         </div>
         <div class="item" id="news">

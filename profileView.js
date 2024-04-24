@@ -20,7 +20,7 @@ function updateProfileView() {
                         <input placeholder="Passord">
                     </div>
                     <div class="bitOfAir">
-                        <input placeholder="By">
+                        <input placeholder="Bilde">
                         </div>
                     <div class="bitOfAir">Er du kunstner?  <input type="checkbox"></div>
                     <div class="bitOfAir">
