@@ -28,6 +28,16 @@ const model = {
         },
     },
     data: {
+
+      newInputSalesObjekt: {
+        seller: '',
+        artId: '',
+        aboutPictureText: '',
+        category: '',
+        artistName: '',
+        price: '',
+      },
+
       categories: ["maleri","treverk","fotografi","litteratur","avantgarde/eksperimentelt",
       "skulptur", "strikketøy","rosemaling", "collage"],
       artObject: [
@@ -83,12 +93,45 @@ const model = {
           previousBids: [''],
         },
       ],
+      salesObjects:[
+     
+      ],
       newsObject:[
         {
         articleTitle:'',
         articleImg: '',
         articleOverview:'',
         articleText: '',
+        },
+      ],
+      salesObjectsToCheck:[
+        {
+          seller: 'Karl',
+          artId: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Kanagawa-oki_nami-ura_-_huge_wave_against_human.jpg',
+          aboutPictureText: 'Hav bølger',
+          category: 0,
+          artistName: 'Heidi',
+          price: '70000',
+        },
+        {
+          seller: 'Karl',
+          artId: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Kanagawa-oki_nami-ura_-_huge_wave_against_human.jpg',
+          aboutPictureText: 'Hav bølger',
+          category: 0,
+          artistName: 'Heidi',
+          price: '70000',
+        },
+       
+      ],
+      auctionObjectsToCheck:[
+        {
+          seller: '',
+          artId: '',
+          timeLeft: '',
+          activeBid: '',
+          newBid: '',
+          bidders: [''],
+          previousBids: [''],
         },
       ],
     },
