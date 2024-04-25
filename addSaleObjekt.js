@@ -1,12 +1,12 @@
 function addSaleObjekt() {
-  document.getElementById('appingtonTheSecond').innerHTML = /*HTML*/ `
+    document.getElementById('appingtonTheSecond').innerHTML = /*HTML*/ `
     <div>
-    <input onchange="newInputSeller(this.value)" placeholder="Selgers Navn">
-    <input onchange="newInputArtId(this.value)" placeholder="Bildets Link">
-    <input onchange="newInputAboutPictureText(this.value)" placeholder="Om Bildet">
-    <input onchange="newInputCategory(this.value)" placeholder="kategori">
-    <input onchange="newInputArtistName(this.value)" placeholder="Kunstneren">
-    <input onchange="newInputPrice(this.value)" placeholder="Pris">
+        <input onchange="newInputSeller(this.value)" placeholder="Selgers Navn"><br>
+        <input onchange="newInputArtId(this.value)" placeholder="Bildets Link"><br>
+        <input onchange="newInputAboutPictureText(this.value)" placeholder="Om Bildet"><br>
+        <input onchange="newInputCategory(this.value)" placeholder="kategori"><br>
+        <input onchange="newInputArtistName(this.value)" placeholder="Kunstneren"><br>
+        <input onchange="newInputPrice(this.value)" placeholder="Pris">
     </div>
     <button onclick="addNewItem()">legg til salgs</button>
     <div class="container_innerGallery">

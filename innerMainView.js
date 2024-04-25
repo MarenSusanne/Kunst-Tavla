@@ -2,23 +2,28 @@
 function updateInnerMainView() {
     document.getElementById("appingtonTheSecond").innerHTML =/*HTML*/`
     <div id="appingtonTheInnerMain">
-        <div class="item" id="auctions">
-            <h1>Auksjoner</h1>
-           
-            <button onclick="addSaleObjekt()">Legg Til Objekt</button>
-        </div>
-        <div class="item" id="news">
-            <h1>Nyheter</h1>
-        </div>
-        <div class="item" id="welcome">
-            <h1>Velkommen til oss!</h1>
+        <div class="item innerAir" id="auctions">
+            <h1 class="stopPadding">Auksjoner</h1>
 
-            <h3>Hvem er vi</h3>
-            <p></p>
-            <h3>Hva jobber vi med</h3>
-            <p></p>
-            <h3>Hvem jobber vi med</h3>
-            <p></p>
+            <div class="nickBottom">
+                <button onclick="updateAdminView()">adminView</button>
+                <button onclick="addSaleObjekt()">Legg Til Objekt</button>
+            </div>
+        </div>
+        <div class="item innerAir" id="news">
+            <h1 class="stopPadding">Nyheter</h1>
+        </div>
+        <div class="item innerAir" id="welcome">
+            <div>
+                <div class="toTheLeft">
+                    <h1 class="stopPadding slenderTexted">Velkommen til oss!</h1>
+                </div>
+                <div class="tentativeSubtitle fixing toTheLeft">Oppdag kunstnerne i samfunnet ditt</div>
+            </div>
+            <p class="fixing spreadOut">Vi heter Fiklebusk AS. Dette er nettsiden
+            for samfunnet vårt og kunstnerne våre i den, slik at kan
+            vi knytte dem bedre sammen og gjør transaksjoner
+            mer tilgjengelig innen salg og kjennskap.</p>
         </div>
     </div>
     `

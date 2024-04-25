@@ -16,8 +16,8 @@ function updateMainView() {
                 <div class="brdrL">
                     <div class="tmtm-R" onclick="updateGalleryAndArchiveView()">Galleri og arkiv</div>
                 </div>
-                <div class="brdrL">
-                    <div class="tmtm-R" onclick="updateProfileView()">Registrering/Profil</div>
+                <div id=registreringOgProfil class="brdrL">
+                    <div class="tmtm-R" onclick="updateRegistrationAndLogInView()">Registrering/Profil</div>
                 </div>
             </span>
         </div>
@@ -29,12 +29,12 @@ function updateMainView() {
         <div class="item item-4 roseborderL"></div>
         <div class="item item-5 roseborderR"></div>
         <div class="item item-6">
-            <span id="aboutPage">Om oss</span>
+                <span id="aboutPage" onclick="updateFooterGalleryRealView()">Galleristudioet vårt</span>
             <span class="brdrL">
-                <span id="aPage">A</span>
+                <span id="aPage" onclick="updateFooterContactView()">Kontakt</span>
             </span>
             <span class="brdrL">
-                <span id="aPage">b</span>
+                <span id="bPage" onclick="updateFooterAboutView()">Om oss</span>
             </span>
             
         </div>

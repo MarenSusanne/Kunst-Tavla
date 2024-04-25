@@ -1,32 +1,40 @@
-//updateProfileView()
-function updateProfileView() {
+//updateRegistrationAndLogInView()
+function updateRegistrationAndLogInView() {
     document.getElementById("appingtonTheSecond").innerHTML =/*HTML*/`
         <div id="appingtonTheProfile">
             <div class="item" id="header_profileMaking">
                 <h2>Lag ny bruker</h2>
             </div>
             <div class="item" id="registerUser">
-                <form>
                     <div class="bitOfAir">
-                        <input placeholder="Navn">
+                        <input onchange="newInputFullName(this.value)" placeholder="Navn">
                     </div>
                     <div class="bitOfAir">
-                        <input placeholder="Brukernavn">
+                        <input onchange="newInputUserName(this.value)" placeholder="Brukernavn">
                     </div>
                     <div class="bitOfAir">
-                        <input placeholder="Epost">
+                        <input onchange="newInputEmail(this.value)" placeholder="Epost">
                     </div>
                     <div class="bitOfAir">
-                        <input placeholder="Passord">
+                        <input onchange="newInputPassword(this.value)" placeholder="Passord">
                     </div>
                     <div class="bitOfAir">
-                        <input placeholder="Bilde">
+                        <input onchange="newInputProfilePicture(this.value)" placeholder="Bilde">
                         </div>
-                    <div class="bitOfAir">Er du kunstner?  <input type="checkbox"></div>
+                    <div class="bitOfAir">Er du kunstner?  <input onchange="newInputArtist(this.value)" type="checkbox"></div>
                     <div class="bitOfAir">
-                        <button>Registrer</button>
+                        <button onclick="addNewUser()">Registrer</button>
                     </div>
-                </form>
+                    <div class="container_innerGallery">
+                    <div>
+                        <img src="${model.inputs.registerUser.profilePicture}" />
+                        <div>${model.inputs.registerUser.fullName}</div>
+                        <div>${model.inputs.registerUser.userName}</div>
+                        <div>${model.inputs.registerUser.email}</div>
+                        <div>${model.inputs.registerUser.password}</div>
+                        <div>${model.inputs.registerUser.artist}</div>
+                    </div>
+    </div>
             </div>
             <div class="item" id="profileInnerBorder"></div>
             <div class="item" id="header_profileLogIn">
@@ -46,3 +54,11 @@ function updateProfileView() {
             </div>
         </div>
 `}
+
+function login() {
+    updateInnerMainView()
+    document.getElementById("registreringOgProfil").innerHTML = `
+    <div class="tmtm-R" onclick="userProfileView()">Profil</div>
+    `;
+    //model.app.user = model.data.users[]
+}

@@ -14,11 +14,13 @@ const model = {
           
         },
 
-        registerUserView: {
-          userNameInput: null,
-          passwordInput: null,
-          fullNameInput: null,
-          profilePicture: null,
+        registerUser: {
+          userName: '',
+          password: '',
+          fullName: '',
+          profilePicture: '',
+          email: '',
+          artist: '',
         },
 
         auctionView: {
@@ -38,30 +40,35 @@ const model = {
         passwordInput: 'admin123',
         fullNameInput: 'Martin Ingolfsrud Innvær',
         profilePicture: 'https://hips.hearstapps.com/hmg-prod/images/martini-recipe-1657532229.jpg?crop=1.00xw:0.334xh;0,0.189xh&resize=1024:*',
+        email: '',
       },
       {
         userNameInput: 'kimmi',
         passwordInput: 'abc123',
         fullNameInput: 'Kim H. Thoresen',
         profilePicture: 'https://image.spreadshirtmedia.net/image-server/v1/compositions/T828A525PA1779PT32X21Y0D177544343W7893H7893/views/1,width=550,height=550,appearanceId=525,backgroundColor=CAED60,noPt=true/doggo-meme-belteveske.jpg',
+        email: '',
       },
       {
         userNameInput: 'marshan',
         passwordInput: 'xyz789',
         fullNameInput: 'Maren S. Tveit',
         profilePicture: 'https://img.pokemondb.net/artwork/large/mareep.jpg',
+        email: '',
       }, 
       {
         userNameInput: 'bennyboy',
         passwordInput: 'tihihi456',
         fullNameInput: 'Benjamin M. Søiland',
         profilePicture: 'https://cdn.discordapp.com/attachments/1103497924215840818/1232620633637257238/thats_all_folks.png?ex=662a1eec&is=6628cd6c&hm=31f003cbfae27221a0424593b393ed6575788d4914c7ed4a79a4f3e5bea9df34&',
+        email: '',
       }, 
       {
         userNameInput: 'morris',
         passwordInput: 'm',
         fullNameInput: 'Martin M. Ristvedt',
         profilePicture: 'https://i.ytimg.com/vi/Oan1YaBSoY0/maxresdefault.jpg',
+        email: '',
       },
     ],
 
