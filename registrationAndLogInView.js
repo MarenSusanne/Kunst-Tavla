@@ -54,11 +54,3 @@ function updateRegistrationAndLogInView() {
             </div>
         </div>
 `}
-
-function login() {
-    updateInnerMainView()
-    document.getElementById("registreringOgProfil").innerHTML = `
-    <div class="tmtm-R" onclick="userProfileView()">Profil</div>
-    `;
-    //model.app.user = model.data.users[]
-}

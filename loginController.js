@@ -1,38 +1,41 @@
 
 function login() {
-let userId = findUser();
-if (userId == null) {
-  model.inputs.loginView.errorMessage ='Feil brukernavn eller passord';
-  updateProfileView()
-}
-else {
-  model.app.page = 'main';
-  model.app.user = userId;
-  model.inputs.loginView.errorMessage = null;
-  updateInnerMainView()
-}
-model.inputs.loginView.userName = null;
-model.inputs.loginView.password = null;
+  let userId = findUser();
+  if (userId == null) {
+    model.inputs.loginView.errorMessage = 'Feil brukernavn eller passord';
+    updateRegistrationAndLogInView()
+  }
+  else {
+    model.app.page = 'main';
+    model.app.user = userId;
+    model.inputs.loginView.errorMessage = null;
+    updateInnerMainView();
+  }
+  model.inputs.loginView.userName = null;
+  model.inputs.loginView.password = null;
+  document.getElementById("registreringOgProfil").innerHTML = `
+    <div class="tmtm-R" onclick="userProfileView()">Profil</div>
+    `;
 }
 
 
 
 function findUser() {
- for (let user of model.data.users) {
-  if (user.passwordInput == model.inputs.loginView.password 
-  && user.userNameInput == model.inputs.loginView.userName){
-    return user.userNameInput;
+  for (let user of model.data.users) {
+    if (user.passwordInput == model.inputs.loginView.password
+      && user.userNameInput == model.inputs.loginView.userName) {
+      return user.userNameInput;
+    }
   }
- }
 
 }
 
-function logInInputUsername(inputValue){
-    model.inputs.loginView.userName = inputValue;
+function logInInputUsername(inputValue) {
+  model.inputs.loginView.userName = inputValue;
 }
 
-function logInInputPassword(inputValue){
-    model.inputs.loginView.password = inputValue;
+function logInInputPassword(inputValue) {
+  model.inputs.loginView.password = inputValue;
 }
 
 
