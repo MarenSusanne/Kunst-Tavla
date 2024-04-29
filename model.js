@@ -137,7 +137,54 @@ const model = {
         },
       ],
       salesObjects:[
-     
+        {
+          seller: 'Marius',
+          artId: 'https://i.ebayimg.com/images/g/iYMAAOSw269jXD2D/s-l1600.jpg',
+          aboutPictureText: 'Katt i Olje farger',
+          category: 0,
+          artistName: 'gardenartsstudio',
+          price: '1000',
+        },
+        {
+          seller: 'Sofie',
+          artId: 'https://museumforartinwood.org/wp-content/uploads/2015/05/1996-11-16-001gsm-1000x858.jpg',
+          aboutPictureText: 'Dancing Tryclops',
+          category: 1,
+          artistName: 'Michael Brolly',
+          price: '23000',
+        },
+        {
+          seller: 'Lars',
+          artId: 'https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FfEGQAdZu5CZyVpOnC3NWMQ%2Fnormalized.jpg&width=910',
+          aboutPictureText: 'Strikke Sykkel',
+          category: 6,
+          artistName: 'Olek',
+          price: '14000',
+        },
+        {
+          seller: 'Francesca',
+          artId: 'https://www.singulart.com/blog/wp-content/uploads/2019/08/the-persistence-of-memory-1931.jpg',
+          aboutPictureText: '«Hukommelsens utholdenhet»',
+          category: 4,
+          artistName: 'Salvador Dali',
+          price: '1000',
+        },
+        {
+          seller: 'Katrine',
+          artId: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mus%C3%A9e_Rodin_1.jpg/220px-Mus%C3%A9e_Rodin_1.jpg',
+          aboutPictureText: 'Tenkeren',
+          category: 5,
+          artistName: 'Auguste Rodin',
+          price: '500000',
+        },
+        {
+          seller: 'Tobias',
+          artId: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/%C3%98lbolle_malt_av_Even_Lande%2C_Norsk_Folkemuseum_NF.1897-0044.jpg',
+          aboutPictureText: 'Even Lande signerte denne store ølbollen i 1809.',
+          category: 7,
+          artistName: 'Even Thorkildsen Lande',
+          price: '70000',
+        },
       ],
       newsObject:[
         {

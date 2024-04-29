@@ -31,7 +31,7 @@ function printBuyView() {
           <div>
               <img src="${model.data.salesObjects[i].artId}" class="standardGalleryImageSize"/>
               <div>${model.data.salesObjects[i].seller}</div>
-              <div>${model.data.salesObjects[i].aboutPictureText}</div>
+              <div class="container_text">${model.data.salesObjects[i].aboutPictureText}</div>
               <div>${model.data.categories[model.data.salesObjects[i].category]}</div>
               <div>${model.data.salesObjects[i].artistName}</div>
               <div>${model.data.salesObjects[i].price}</div>
