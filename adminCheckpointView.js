@@ -3,11 +3,17 @@ function printCheckpointView() {
 
   for (let i = 0; i < model.data.salesObjectsToCheck.length; i++) {
     print += /*HTML*/`
-    <div class="container_innerGallery">
+    <div class="adminViewCheckpoint">
         <div>
-            <img src="${model.data.salesObjectsToCheck[i].artId}" class="standardGalleryImageSize"/>
-            <button onclick="acceptInput(${i})">Aksepter</button>
-            <button onclick="declineInput(${i})">Avslå</button>
+            <img src="${model.data.salesObjectsToCheck[i].artId}" class="adminViewPicture"/>
+            <div>
+            <li>Selger: ${model.data.salesObjectsToCheck[i].seller}
+            <li>Om Bildet: ${model.data.salesObjectsToCheck[i].aboutPictureText}
+            <li>Kunstner: ${model.data.salesObjectsToCheck[i].artistName}
+            <li>Pris: ${model.data.salesObjectsToCheck[i].price}
+            </div>
+            <button class="adminButtonAccept" onclick="acceptInput(${i})">Aksepter</button>
+            <button class="adminButtonDecline" onclick="declineInput(${i})">Avslå</button>
         </div>
     </div>
     `
@@ -28,3 +34,14 @@ function printCheckpointView() {
     `
 }
 
+
+
+/*div tid igjen 
+div nåværende bud: 5000
+div minste nye bud: 5500
+inputfelt _______
+
+button Gi bud
+
+
+list tidligere bud: */

@@ -1,0 +1,26 @@
+.adminViewCheckpoint {
+  border: 2px solid gray;
+  padding: 2px;
+  background-color: lightgray;
+}
+
+.adminButtonAccept {
+padding: 5px;
+background-color: green;
+font-weight: bold;
+font-size: larger;
+width: 100px;
+}
+
+.adminButtonDecline {
+  padding: 5px;
+  background-color: red;
+  font-weight: bold;
+  font-size: larger;
+  width: 100px;
+  }
+
+  .adminViewPicture {
+    height: 180px;
+    justify-content: center;
+  }
