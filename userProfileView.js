@@ -17,7 +17,7 @@ function userProfileView() {
                             <p>Profiltekst!!!</p>
                         </div>
                     </div>
-                    <div class="userProfilePicture"><img src="${model.data.users[i].profilePicture}" class="standardGalleryImageSize"/></div>
+                    <div class="userProfilePicture"><img src="${model.data.users[i].profilePicture}" class="standardProfileImageSize"/></div>
                     <button onclick="editProfile()">Rediger profil</button>
                 </div>
                 <div class="item hori2">
