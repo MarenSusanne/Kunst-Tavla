@@ -16,7 +16,16 @@ function updateAdminView() {
   <div>(admin funkjsoner)
   <button onclick="updateAdminCheckpointView()">Kontrollpunkt</button>
   <button onclick="">rediger profil</button>
+  <div>
+  Admin knapper: 
+  <button onclick="editUsers()">Endre brukere</button>
+  <button onclick="editBuyNow()">Endre til salg</button>
+  <button onclick="editAuctions()">Endre auksjoner</button>
   </div>
+  </div>
+  
+  
   </div>
   `
 }
+

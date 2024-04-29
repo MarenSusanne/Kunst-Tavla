@@ -129,6 +129,9 @@ const model = {
         {
           seller: '',
           artId: '',
+          aboutPictureText:'',
+          category: 0,
+          artistName:'',
           timeLeft: '',
           activeBid: '',
           newBid: '',

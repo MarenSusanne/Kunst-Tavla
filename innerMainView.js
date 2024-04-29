@@ -6,7 +6,7 @@ function updateInnerMainView() {
             <h1 class="stopPadding">Auksjoner</h1>
 
             <div class="nickBottom">
-                <button onclick="updateAdminView()">adminView</button>
+               
                 <button onclick="addSaleObjekt()">Legg Til Objekt</button>
             </div>
         </div>
