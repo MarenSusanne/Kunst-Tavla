@@ -18,8 +18,6 @@ function login() {
     `;
 }
 
-
-
 function findUser() {
   for (let user of model.data.users) {
     if (user.passwordInput == model.inputs.loginView.password
@@ -38,7 +36,14 @@ function logInInputPassword(inputValue) {
   model.inputs.loginView.password = inputValue;
 }
 
-
+function showCurrentUser(){
+  for (let i = 0; i < model.data.users.length; i++) {
+    if (model.app.user == model.data.users[i].userName) {
+      
+    }
+    
+  }
+}
 
 
 /*function login() {
