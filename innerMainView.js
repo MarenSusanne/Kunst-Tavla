@@ -7,7 +7,7 @@ function updateInnerMainView() {
 
             <div class="nickBottom">
                
-                <button onclick="addSaleObjekt()">Legg Til Objekt</button>
+               
             </div>
         </div>
         <div class="item innerAir" id="news">
