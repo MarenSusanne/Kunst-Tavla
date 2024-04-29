@@ -29,7 +29,8 @@ function userProfileView() {
         `;
                 break;
         
-            default:
+            case 'AdminMartini':
+                updateAdminView()
                 break;
         }
 
