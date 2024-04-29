@@ -1,13 +1,28 @@
 
 //adminCheckpoint
-function acceptInput(index) {
+function acceptInputForSale(index) {
   model.data.salesObjects.push(model.data.salesObjectsToCheck[index])
   updateAdminCheckpointView()
-  declineInput()
+  declineInputForSale()
 }
 
-function declineInput(index) {
+function declineInputForSale(index) {
   model.data.salesObjectsToCheck.splice(index, 1);
+  updateAdminCheckpointView()
+}
+
+function declineInputUser(index) {
+  model.data.users.splice(index, 1);
+  editUsers()
+}
+
+function declineInputBuy(index) {
+  model.data.salesObjects.splice(index, 1);
+  editBuyNow()
+}
+
+function declineInputAuction(index) {
+  model.data.auctionObjects.splice(index, 1);
   updateAdminCheckpointView()
 }
 

@@ -4,12 +4,19 @@
     grid-template-rows: 40px, 200px;
     grid-template-columns: 1fr;
 }
+.container_text{
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    
+}
 #printGallery{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 10px;
     margin: 0px 10px 0px 10px;
     overflow: auto;
+    flex-wrap: wrap;
+    height: 460px;
 }
 .standardGalleryImageSize {
     height: 150px;

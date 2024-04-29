@@ -12,8 +12,8 @@ function printCheckpointView() {
             <li>Kunstner: ${model.data.salesObjectsToCheck[i].artistName}
             <li>Pris: ${model.data.salesObjectsToCheck[i].price}
             </div>
-            <button class="adminButtonAccept" onclick="acceptInput(${i})">Aksepter</button>
-            <button class="adminButtonDecline" onclick="declineInput(${i})">Avslå</button>
+            <button class="adminButtonAccept" onclick="acceptInputForSale(${i})">Aksepter</button>
+            <button class="adminButtonDecline" onclick="declineInputForSale(${i})">Avslå</button>
         </div>
     </div>
     `
