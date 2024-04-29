@@ -21,6 +21,10 @@
 }
 
 /* Maren og subgrid*/
+.standardGalleryImageSize{
+    height: 300px;
+    width: auto;
+}
 
 .subtitle {
     color: #b7b7b7;
