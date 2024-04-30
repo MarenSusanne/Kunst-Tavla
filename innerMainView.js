@@ -12,6 +12,7 @@ function updateInnerMainView() {
         </div>
         <div class="item innerAir" id="news">
             <h1 class="stopPadding">Nyheter</h1>
+            <div>${printNews()}</div>
         </div>
         <div class="item innerAir" id="welcome">
             <div>
@@ -29,3 +30,6 @@ function updateInnerMainView() {
     `
 }
 
+function printNews(){
+    let print = "";
+}

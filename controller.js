@@ -88,7 +88,12 @@ function newInputArtist(inputValue) {
   updateRegistrationAndLogInView()
 }
 
-
+//buyView
+function chooseCategory(filter){
+  model.inputs.chosenFilter = filter
+  updateBuyOnly()
+  console.log("help")
+}
 
 /*function addNewSalesObject(){
   let short = model.data.newInputSalesObjekt
