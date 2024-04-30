@@ -5,7 +5,7 @@ function printUsers() {
         print += /*HTML*/`
         <div class="adminViewCheckpoint">
             <div>
-            <img src="${model.data.users[i].profilePicture}" class=""/>
+            <img src="${model.data.users[i].profilePicture}" class="adminViewPicture"/>
             <div>
                 <li>Navn: ${model.data.users[i].fullNameInput}
                 <li>: ${model.data.users[i].userNameInput}
@@ -20,7 +20,7 @@ function printUsers() {
     function editUsers() {
         document.getElementById('appingtonTheSecond').innerHTML = /*HTML*/ `
           <div class="container_mainGallery">
-              <div id="">
+              <div>
                   <h2>Fjern bruker</h2>
               </div>
               <div id="printGallery">
