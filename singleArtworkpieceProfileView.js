@@ -31,7 +31,9 @@ function updateSingleArtworkpieceProfileView(){
                 <div>xx:xx semesteren på fyra år  1700kr</div>
                 <div>xx:xx Som jag förstod var vi 2000kr</div>
                 <div>xx:xx förälskade Du sa att 2350kr</div>
-                <div><i>Minste bud: 2700kr</i></div>
+            </div>
+            <div>
+                <i>Minste bud: 2700kr</i>
             </div>
         </div>
         <div class="section_8"></div>

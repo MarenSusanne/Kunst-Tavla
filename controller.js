@@ -1,98 +1,106 @@
 
 //adminCheckpoint
 function acceptInputForSale(index) {
-  model.data.salesObjects.push(model.data.salesObjectsToCheck[index])
-  updateAdminCheckpointView()
-  declineInputForSale()
+  model.data.salesObjects.push(model.data.salesObjectsToCheck[index]);
+  updateAdminCheckpointView();
+  declineInputForSale();
 }
 
 function declineInputForSale(index) {
   model.data.salesObjectsToCheck.splice(index, 1);
-  updateAdminCheckpointView()
+  updateAdminCheckpointView();
 }
 
 function declineInputUser(index) {
   model.data.users.splice(index, 1);
-  editUsers()
+  editUsers();
 }
 
 function declineInputBuy(index) {
   model.data.salesObjects.splice(index, 1);
-  editBuyNow()
+  editBuyNow();
 }
 
 function declineInputAuction(index) {
   model.data.auctionObjects.splice(index, 1);
-  updateAdminCheckpointView()
+  updateAdminCheckpointView();
 }
 
 //addSalesobjekt
 function addNewItem() {
-  model.data.salesObjectsToCheck.push(model.data.newInputSalesObjekt)
-  addSaleObjekt()
+  model.data.newInputSalesObjekt.category = model.inputs.chosenCategory;
+  model.data.salesObjectsToCheck.push(model.data.newInputSalesObjekt);
+  model.inputs.chosenCategory = null;
+  changePage('profile');
 }
 
 function newInputSeller(inputValue) {
   model.data.newInputSalesObjekt.seller = inputValue;
-  addSaleObjekt()
+  addSaleObjekt();
 }
 function newInputArtId(inputValue) {
   model.data.newInputSalesObjekt.artId = inputValue;
-  addSaleObjekt()
+  addSaleObjekt();
 }
 function newInputAboutPictureText(inputValue) {
   model.data.newInputSalesObjekt.aboutPictureText = inputValue;
-  addSaleObjekt()
+  addSaleObjekt();
 }
 function newInputCategory(inputValue) {
   model.data.newInputSalesObjekt.category = inputValue;
-  addSaleObjekt()
+  addSaleObjekt();
 }
 function newInputArtistName(inputValue) {
   model.data.newInputSalesObjekt.artistName = inputValue;
-  addSaleObjekt()
+  addSaleObjekt();
 }
 function newInputPrice(inputValue) {
   model.data.newInputSalesObjekt.price = inputValue;
-  addSaleObjekt()
+  addSaleObjekt();
 }
 
 //registrationAndLogInView
 function addNewUser(index) {
   model.data.users.push(model.inputs.registerUser[index]);
-  updateRegistrationAndLogInView()
+  updateRegistrationAndLogInView();
 }
 function newInputFullName(inputValue) {
   model.inputs.registerUser.fullName = inputValue;
-  updateRegistrationAndLogInView()
-  console.log(inputValue)
+  updateRegistrationAndLogInView();
+  console.log(inputValue);
 }
 function newInputUserName(inputValue) {
   model.inputs.registerUser.userName = inputValue;
-  updateRegistrationAndLogInView()
+  updateRegistrationAndLogInView();
 }
 function newInputEmail(inputValue) {
   model.inputs.registerUser.email = inputValue;
-  updateRegistrationAndLogInView()
+  updateRegistrationAndLogInView();
 }
 function newInputPassword(inputValue) {
   model.inputs.registerUser.password = inputValue;
-  updateRegistrationAndLogInView()
+  updateRegistrationAndLogInView();
 }
 function newInputProfilePicture(inputValue) {
   model.inputs.registerUser.profilePicture = inputValue;
-  updateRegistrationAndLogInView()
+  updateRegistrationAndLogInView();
 }
 function newInputArtist(inputValue) {
   model.inputs.registerUser.artist = inputValue;
-  updateRegistrationAndLogInView()
+  updateRegistrationAndLogInView();
 }
 
 //buyView
 function chooseCategory(filter){
-  model.inputs.chosenFilter = filter
-  updateBuyOnly()
-  console.log("help")
+  model.inputs.chosenCategory = filter;
+  updateView();
+  console.log(filter);
+}
+
+
+function changePage(page){
+  model.app.page = page;
+  updateView();
 }
 
 /*function addNewSalesObject(){

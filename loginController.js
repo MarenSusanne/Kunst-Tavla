@@ -3,18 +3,19 @@ function login() {
   let userId = findUser();
   if (userId == null) {
     model.inputs.loginView.errorMessage = 'Feil brukernavn eller passord';
-    updateRegistrationAndLogInView()
+    changePage('registrationAndLogIn')
   }
   else {
     model.app.page = 'main';
     model.app.user = userId;
     model.inputs.loginView.errorMessage = null;
-    updateInnerMainView();
+    changePage('main');
   }
   model.inputs.loginView.userName = null;
   model.inputs.loginView.password = null;
-  document.getElementById("registreringOgProfil").innerHTML = `
-    <div class="tmtm-R" onclick="userProfileView()">Profil</div>
+  document.getElementById("registreringOgProfil").innerHTML = /*HTML*/`
+    <div class="tmtm-R" onclick="changePage('profile')">Profil</div>
+    
     `;
 }
 
@@ -44,6 +45,14 @@ function showCurrentUser(){
     
   }
 }
+
+// function logOut(){
+//   model.app.user = null;
+//   document.getElementById("registreringOgProfil").innerHTML = `
+//   <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">Registrering/Profil</div>
+//   `
+//   changePage('main')<button onclick="logOut()">Logg ut</button>
+// }
 
 
 /*function login() {

@@ -1,12 +1,12 @@
 let app = document.getElementById("app")
 const model = {
     app: {
-        user: null,
-        page: 'profile',
+        user: 'kimmi',
+        page: 'addSaleObject',
     },
     inputs: {
         searchBar: null, //'artItems','artists','detailed search',
-        chosenFilter: 'null',
+        chosenCategory: 'null',
         loginView: {
           errorMessage: '',
           userName: null,
@@ -89,28 +89,28 @@ const model = {
           artPicture: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Kanagawa-oki_nami-ura_-_huge_wave_against_human.jpg', /*Vannskulpturinnstallasjon*/
           aboutPictureText: 'En interaktiv dialog om japonisme, orientalisme, og oksidentalisme mellom Japan og Holland.',
           category: 5,
-          artistName: "Martini the Drink",
+          artistName: "marshan",
         },
         {
           artId: 'to the desert',
           artPicture: 'https://64.media.tumblr.com/9e47ebb3beaf20d2b35adf0ebf40f29e/tumblr_mveet3Uiez1qczwklo2_1280.jpg', /*Setninger av lys på vegger*/
           aboutPictureText: 'Et bevegelig dikt skapt med metall som klipper skygger og lys på veggene, om tapt kjærlighet og meningen med det.',
           category: 4,
-          artistName: "Rebecka a baguette-eater",
+          artistName: "kimmi",
         },
         {
           artId: 'strandsstudie',
           artPicture: 'https://64.media.tumblr.com/b52b7365d06d5c251ab071c52d820ecc/49bdba3aae5b17a7-b2/s1280x1920/b079dffd45795882f78d497152a82c148a6e690e.jpg', /*Bilder av vannmalingsstudie*/
           aboutPictureText: 'Et tidligere vannmalinggstudie som jeg har klippet opp. En lang stund var ingen interreserte i kunsten min, og så ble dette av alle verkene mine bemerket: et studie.',
           category: 2,
-          artistName: "Marius in Boots",
+          artistName: "morris",
         },
       ],
       ourArtists:[ // For å hente så må man bruke model.data.ourArtits[3]
       // FUNKSJONSSPØRSMÅL: hvordan opprettholder vi galleriet hvis enkeltobjekter blir trukket vekk?
       // IDE: fjerne innholdet men ikke objektet; send den til gravplassen
         {
-         artistId: 'Martini the Drink',
+         artistId: 'Martin Ingolfsrud Innvær',
          profilePicture: 'A lily',
          aboutText: '',
        },

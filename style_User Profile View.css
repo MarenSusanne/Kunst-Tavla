@@ -23,7 +23,7 @@
 /* Maren og subgrid*/
 .standardProfileImageSize{
     height: 300px;
-    width: auto;
+    width: 300px;
 }
 
 .subtitle {
@@ -38,4 +38,19 @@
     background-color: #b6aa9b;
     width: 560px;
     height: auto;
+}
+
+.petalBtn {
+    background-color: #991414;
+    border: 1px solid #5f181c;
+    border-radius: 20%;
+    padding: 10px;
+    position: absolute;
+    margin-left: 376px; margin-top: 140px;
+}
+.petalBtn:hover{
+    background-color: #880707;
+}
+.petalBtn:active{
+    background-color: maroon;
 }

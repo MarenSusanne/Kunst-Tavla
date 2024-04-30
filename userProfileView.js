@@ -19,12 +19,12 @@ function userProfileView() {
                     </div>
                     <div class="userProfilePicture"><img src="${model.data.users[i].profilePicture}" class="standardProfileImageSize"/></div>
                     <button onclick="editProfile()">Rediger profil</button>
-                    <button onclick="addSaleObjekt()">Legg Til Objekt</button>
                 </div>
                 <div class="item hori2">
+                    <button class="petalBtn" onclick="changePage('addSaleObject')">Legg Til Objekt</button>
                     <h1>Mine Verk</h1>
                     <p class="subtitle">the best blog in the world</p>
-                    <div><div>
+                    <div>${printUserArt()}</div>
                 </div>
             </div>
         `;
@@ -34,6 +34,22 @@ function userProfileView() {
                 updateAdminView()
                 break;
         }
+
+    }
+}
+        
+        function printUserArt() {
+            let print = "";
+            for (let i = 0; i < model.data.artObject.length; i++) {
+            if(model.data.artObject[i].artistName == model.app.user){
+                print += /*HTML*/`<img src="${model.data.artObject[i].artPicture}">`
+        }
+    }
+
+    return print
+        }
+
+
 
         //  (model.app.user == model.data.users[i].userNameInput) {
         //     console.log(model.app.user)
@@ -65,8 +81,7 @@ function userProfileView() {
         //     document.getElementById("appingtonTheSecond").innerHTML =/*HTML*/``
         //     console.log("nope")
         // }
-    }
-}
+
 
 // NOTATER: alder, kjønn, lokalasjon <-- Burde være valgfritt om man ønsker
 //å dele denne informasjonen, ellers så kan den være usynlig.

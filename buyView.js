@@ -24,7 +24,7 @@
 
 function printBuyView() {
     let print = "";
-//    if (model.inputs.chosenFilter == 'null'){
+   if (model.inputs.chosenCategory == 'null'){
     for (let i = 0; i < model.data.salesObjects.length; i++) {
       print += /*HTML*/`
       <div class="container_innerBuyGallery">
@@ -38,11 +38,10 @@ function printBuyView() {
           </div>
       </div>
       `} 
-      console.log("if")
-/*    } else {
+ } else {
       for (let i = 0; i < model.data.salesObjects.length; i++) {
-        if(model.data.salesObjects.category == model.inputs.chosenFilter){
-          print += /*HTML*//*`
+        if(model.data.salesObjects[i].category == model.inputs.chosenCategory){
+          print += /*HTML*/`
       <div class="container_innerBuyGallery">
         <img src="${model.data.salesObjects[i].artId}" class="standardBuyImageSize"/>
           <div class="innerInfo">
@@ -56,7 +55,7 @@ function printBuyView() {
       `
         }
     }
-  }*/
+  }
     return print
   }
   
@@ -69,20 +68,13 @@ function printBuyView() {
           </div>
           <div id="printBuyGallery">
               ${printBuyView()}
+              <select class="buyFilter" onchange="chooseCategory(this.value)">
+              ${printOptions()}
+            </select>
               </div>
       </div>
       `
   }
-  // function printOptions(){
-  //   let print = "<option selected value=null>Velg Kategori</option>";
-  //   for (let i = 0; i < model.data.categories.length; i++) {
-  //     print += /*HTML*/`
-  //       <option ${model.app.chosenGenre == i ? 'selected' : ''} value="${i}">${model.data.categories[i]}</option>
-  //     `
-  //   }
-  //   return print
-  // }
 
-  //  <select class="buyFilter" onchange="chooseCategory(this.value)">
-  //     ${printOptions()}
-  //   </select>
+
+

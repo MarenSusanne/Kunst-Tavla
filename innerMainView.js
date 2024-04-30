@@ -32,4 +32,5 @@ function updateInnerMainView() {
 
 function printNews(){
     let print = "";
+    return print;
 }

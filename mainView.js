@@ -4,20 +4,20 @@ function updateMainView() {
     
     <div class="container">
         <div class="item item-1">
-            <div id="logoGoHere" onclick="updateInnerMainView()"></div>
+            <div id="logoGoHere" onclick="changePage('main')"></div>
             <input type="text" id="søkefeltHer" placeholder="Søk her..."/>
-        </div>
+        </div> 
         <div class="item item-2">
             <span class="navigationBar">
-                <div class="tmtm-L" onclick="updateBuyAndAuction()">Kjøp og auksjon</div>
+                <div class="tmtm-L" onclick="changePage('buyAndAuction')">Kjøp og auksjon</div>
                 <div class="brdrL">
-                    <div class="tmtm-L" onclick="updateArtistView()">Kunstnerne våre</div>
+                    <div class="tmtm-L" onclick="changePage('artists')">Kunstnerne våre</div>
                 </div>
                 <div class="brdrL">
-                    <div class="tmtm-R" onclick="updateGalleryAndArchiveView()">Galleri og arkiv</div>
+                    <div class="tmtm-R" onclick="changePage('galleryAndArchive')">Galleri og arkiv</div>
                 </div>
                 <div id=registreringOgProfil class="brdrL">
-                    <div class="tmtm-R" onclick="updateRegistrationAndLogInView()">Registrering/Profil</div>
+                    <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">Registrering/Profil</div>
                 </div>
             </span>
         </div>
@@ -29,12 +29,12 @@ function updateMainView() {
         <div class="item item-4 roseborderL"></div>
         <div class="item item-5 roseborderR"></div>
         <div class="item item-6">
-                <span id="aboutPage" onclick="updateFooterGalleryRealView()">Galleristudioet vårt</span>
+                <span id="aboutPage" onclick="changePage('footerGallery')">Galleristudioet vårt</span>
             <span class="brdrL">
-                <span id="aPage" onclick="updateFooterContactView()">Kontakt</span>
+                <span id="aPage" onclick="changePage('footerContact')">Kontakt</span>
             </span>
             <span class="brdrL">
-                <span id="bPage" onclick="updateFooterAboutView()">Om oss</span>
+                <span id="bPage" onclick="changePage('footerAbout')">Om oss</span>
             </span>
             
         </div>

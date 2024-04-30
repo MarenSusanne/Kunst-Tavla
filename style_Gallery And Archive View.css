@@ -1,6 +1,6 @@
 .toDelt {
     display: grid;
-    border: 1px solid orchid;
+    /*border: 1px solid orchid;*/
     width: auto;
     height: 554px;
     grid-template-rows: 1fr 220px 1fr;
@@ -14,7 +14,8 @@
 }
 
 .delt {
-    border: 4px solid darkolivegreen;
+    border: 4px solid #807a75/*4px solid darkolivegreen*/;
+    background-color: white;
 }
 
 .delt_1 {

@@ -10,22 +10,24 @@ function updateAdminView() {
 
   </div>
   <div>(kontakt info)
-  Mail: 
-  Tlf:
+    Mail: 
+    Tlf:
   </div>
   <div>(admin funkjsoner)
-  <button onclick="updateAdminCheckpointView()">Kontrollpunkt</button>
-  <button onclick="">rediger profil</button>
-  <div>
-  Admin knapper: 
-  <button onclick="editUsers()">Endre brukere</button>
-  <button onclick="editBuyNow()">Endre til salg</button>
-  <button onclick="editAuctions()">Endre auksjoner</button>
-  </div>
+    <button onclick="changePage('adminCheckpoint')">Kontrollpunkt</button>
+    <button onclick="changePage('editProfile')">Rediger profil</button>
+    <div>
+      Admin knapper: 
+      <button onclick="changePage('editUsers')">Endre brukere</button>
+      <button onclick="changePage('editBuyNow')">Endre til salg</button>
+      <button onclick="changePage('editAuctions')">Endre auksjoner</button>
+    </div>
   </div>
   
   
   </div>
   `
 }
+
+
 
