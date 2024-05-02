@@ -14,8 +14,10 @@ function login() {
   model.inputs.loginView.userName = null;
   model.inputs.loginView.password = null;
   document.getElementById("registreringOgProfil").innerHTML = /*HTML*/`
-    <div class="tmtm-R" onclick="changePage('profile')">Profil</div>
-    
+    <div>
+      <div class="tmtm-R" onclick="changePage('profile')">Profil</div>
+      <button onclick="logOut()">Logg ut</button>
+    </div>
     `;
 }
 
@@ -37,22 +39,21 @@ function logInInputPassword(inputValue) {
   model.inputs.loginView.password = inputValue;
 }
 
-function showCurrentUser(){
+function showCurrentUser() {
   for (let i = 0; i < model.data.users.length; i++) {
     if (model.app.user == model.data.users[i].userName) {
-      
+
     }
-    
+
   }
 }
 
-// function logOut(){
-//   model.app.user = null;
-//   document.getElementById("registreringOgProfil").innerHTML = `
-//   <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">Registrering/Profil</div>
-//   `
-//   changePage('main')<button onclick="logOut()">Logg ut</button>
-// }
+function logOut() {
+  model.app.user = null;
+  document.getElementById("registreringOgProfil").innerHTML = /*HTML*/`
+  <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">Registrering/Profil</div>
+    `;
+}
 
 
 /*function login() {
