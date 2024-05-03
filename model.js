@@ -2,7 +2,7 @@ let app = document.getElementById("app")
 const model = {
     app: {
         user: '',
-        page: 'registrationAndLogIn',
+        page: 'artists',
     },
     inputs: {
         searchBar: null, //'artItems','artists','detailed search',
@@ -43,6 +43,7 @@ const model = {
         profilePicture: 'https://hips.hearstapps.com/hmg-prod/images/martini-recipe-1657532229.jpg?crop=1.00xw:0.334xh;0,0.189xh&resize=1024:*',
         email: '',
         artist: '',
+        userDescription: '',
       },
       {
         userNameInput: 'kimmi',
@@ -51,6 +52,7 @@ const model = {
         profilePicture: 'https://image.spreadshirtmedia.net/image-server/v1/compositions/T828A525PA1779PT32X21Y0D177544343W7893H7893/views/1,width=550,height=550,appearanceId=525,backgroundColor=CAED60,noPt=true/doggo-meme-belteveske.jpg',
         email: '',
         artist: '',
+        userDescription: '',
       },
       {
         userNameInput: 'marshan',
@@ -59,6 +61,7 @@ const model = {
         profilePicture: 'https://img.pokemondb.net/artwork/large/mareep.jpg',
         email: '',
         artist: '',
+        userDescription: '',
       }, 
       {
         userNameInput: 'bennyboy',
@@ -67,6 +70,7 @@ const model = {
         profilePicture: 'https://cdn.discordapp.com/attachments/1103497924215840818/1232620633637257238/thats_all_folks.png?ex=662a1eec&is=6628cd6c&hm=31f003cbfae27221a0424593b393ed6575788d4914c7ed4a79a4f3e5bea9df34&',
         email: '',
         artist: '',
+        userDescription: '',
       }, 
       {
         userNameInput: 'morris',
@@ -75,6 +79,7 @@ const model = {
         profilePicture: 'https://i.ytimg.com/vi/Oan1YaBSoY0/maxresdefault.jpg',
         email: '',
         artist: '',
+        userDescription: '',
       },
     ],
 
@@ -141,7 +146,8 @@ const model = {
           aboutPictureText:'Det kjente skrik',
           category: 0,
           artistName:'Edvard Munch',
-          timeLeft: '',
+          auctionEndTime: 'Sat May 04 2024 14:00:50 GMT+0200 (Central European Summer Time)'
+          ,
           activeBid: '202',
           newBid: '',
           bidders: ['Mona'],
@@ -153,7 +159,8 @@ const model = {
           aboutPictureText:'Sjalu(2007)',
           category: 5,
           artistName:'Nico Widerberg',
-          timeLeft: '',
+          auctionEndTime: 'Fri May 10 2024 14:00:50 GMT+0200 (Central European Summer Time)'
+          ,
           activeBid: '34000',
           newBid: '',
           bidders: ['Lisa','Morten','Beate'],
@@ -235,13 +242,13 @@ const model = {
           artistName: 'Heidi',
           price: '70000',
         },
-       
+      
       ],
       auctionObjectsToCheck:[
         {
           seller: '',
           artId: '',
-          timeLeft: '',
+          auctionEndTime: '',
           activeBid: '',
           newBid: '',
           bidders: [''],

@@ -60,6 +60,7 @@ function newInputPrice(inputValue) {
 }
 function newInputCountdownDate(inputValue) {
   model.data.newInputSalesObjekt.inputtedDate = inputValue;
+  console.log(inputValue)
   addSaleObjekt();
 }
 
@@ -105,12 +106,12 @@ function addNewUser() {
   updateView();
 }
 function newInputFullName(inputValue) {
-  model.inputs.registerUser.fullName = inputValue;
+  model.inputs.registerUser.fullNameInput = inputValue;
   updateView();
   console.log(inputValue);
 }
 function newInputUserName(inputValue) {
-  model.inputs.registerUser.userName = inputValue;
+  model.inputs.registerUser.userNameInput = inputValue;
   updateView();
 }
 function newInputEmail(inputValue) {
@@ -118,7 +119,7 @@ function newInputEmail(inputValue) {
   updateView();
 }
 function newInputPassword(inputValue) {
-  model.inputs.registerUser.password = inputValue;
+  model.inputs.registerUser.passwordInput = inputValue;
   updateView();
 }
 function newInputProfilePicture(inputValue) {
