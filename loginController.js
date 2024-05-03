@@ -10,15 +10,15 @@ function login() {
     model.app.user = userId;
     model.inputs.loginView.errorMessage = null;
     changePage('main');
+    document.getElementById("registreringOgProfil").innerHTML = /*HTML*/`
+      <div>
+        <div class="tmtm-R" onclick="changePage('profile')">Profil</div>
+        <div id="logOutButton"><button  onclick="logOut()">Logg ut</button></div>
+      </div>
+      `;
   }
   model.inputs.loginView.userName = null;
   model.inputs.loginView.password = null;
-  document.getElementById("registreringOgProfil").innerHTML = /*HTML*/`
-    <div>
-      <div class="tmtm-R" onclick="changePage('profile')">Profil</div>
-      <button onclick="logOut()">Logg ut</button>
-    </div>
-    `;
 }
 
 function findUser() {
@@ -48,11 +48,11 @@ function showCurrentUser() {
   }
 }
 
+
+
 function logOut() {
-  model.app.user = null;
-  document.getElementById("registreringOgProfil").innerHTML = /*HTML*/`
-  <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">Registrering/Profil</div>
-    `;
+  model.app.user = '';
+  changePage('main');
 }
 
 

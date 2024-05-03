@@ -20,7 +20,7 @@ function updateGalleryView() {
             ${print}
         </div>
     </div>
-    `
+    `;
 }
 
 

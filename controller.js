@@ -58,36 +58,76 @@ function newInputPrice(inputValue) {
   model.data.newInputSalesObjekt.price = inputValue;
   addSaleObjekt();
 }
+function newInputCountdownDate(inputValue) {
+  model.data.newInputSalesObjekt.inputtedDate = inputValue;
+  addSaleObjekt();
+}
 
+function splitSalesObject(){
+ if (document.getElementById('chooseYourInputCategory').value == 0){
+  document.getElementById("theNameOfSeller").disabled = false;
+  document.getElementById("artPictureLink").disabled = false;
+  document.getElementById("artPictureAltText").disabled = false;
+  document.getElementById("chooseYourCategory").disabled = false;
+  document.getElementById("theNameOfArtist").disabled = false;
+  document.getElementById("putInYourPrice").disabled = false;
+  document.getElementById("putInYourDate").disabled = false;
+ } else if (document.getElementById('chooseYourInputCategory').value == 1){
+  document.getElementById("theNameOfSeller").disabled = false;
+  document.getElementById("artPictureLink").disabled = false;
+  document.getElementById("artPictureAltText").disabled = false;
+  document.getElementById("chooseYourCategory").disabled = false;
+  document.getElementById("theNameOfArtist").disabled = false;
+  document.getElementById("putInYourPrice").disabled = false;
+  document.getElementById("putInYourDate").disabled = true;
+ } else if (document.getElementById('chooseYourInputCategory').value == 2) {
+  document.getElementById("theNameOfSeller").disabled = false;
+  document.getElementById("artPictureLink").disabled = false;
+  document.getElementById("artPictureAltText").disabled = false;
+  document.getElementById("chooseYourCategory").disabled = false;
+  document.getElementById("theNameOfArtist").disabled = false;
+  document.getElementById("putInYourPrice").disabled = true;
+  document.getElementById("putInYourDate").disabled = true;
+ } else{
+  //document.querySelectorAll('#allInputs input')
+  document.getElementById("theNameOfSeller").disabled = true;
+  document.getElementById("artPictureLink").disabled = true;
+  document.getElementById("artPictureAltText").disabled = true;
+  document.getElementById("chooseYourCategory").disabled = true;
+  document.getElementById("theNameOfArtist").disabled = true;
+  document.getElementById("putInYourPrice").disabled = true;
+  document.getElementById("putInYourDate").disabled = true;
+ }
+}
 //registrationAndLogInView
-function addNewUser(index) {
-  model.data.users.push(model.inputs.registerUser[index]);
-  updateRegistrationAndLogInView();
+function addNewUser() {
+  model.data.users.push(model.inputs.registerUser);
+  updateView();
 }
 function newInputFullName(inputValue) {
   model.inputs.registerUser.fullName = inputValue;
-  updateRegistrationAndLogInView();
+  updateView();
   console.log(inputValue);
 }
 function newInputUserName(inputValue) {
   model.inputs.registerUser.userName = inputValue;
-  updateRegistrationAndLogInView();
+  updateView();
 }
 function newInputEmail(inputValue) {
   model.inputs.registerUser.email = inputValue;
-  updateRegistrationAndLogInView();
+  updateView();
 }
 function newInputPassword(inputValue) {
   model.inputs.registerUser.password = inputValue;
-  updateRegistrationAndLogInView();
+  updateView();
 }
 function newInputProfilePicture(inputValue) {
   model.inputs.registerUser.profilePicture = inputValue;
-  updateRegistrationAndLogInView();
+  updateView();
 }
 function newInputArtist(inputValue) {
   model.inputs.registerUser.artist = inputValue;
-  updateRegistrationAndLogInView();
+  updateView();
 }
 
 //buyView
@@ -102,6 +142,45 @@ function changePage(page){
   model.app.page = page;
   updateView();
 }
+
+function countDownSystem () {
+
+}
+
+/*// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+
+
+
+
 
 /*function addNewSalesObject(){
   let short = model.data.newInputSalesObjekt

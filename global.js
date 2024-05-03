@@ -11,47 +11,70 @@
       if(model.inputs.chosenCategory == i){
       print += /*HTML*/`
         <option selected value="${i}">${model.data.categories[i]}</option>
-      `
+      `;
     }
       else{
         print += /*HTML*/`
         <option value="${i}">${model.data.categories[i]}</option>
-      `
+      `;
       }
     }
     return print
   }
 
+  function printSalesOptions(){
+    let print = /*HTML*/`<option value=null>Skal denne til... </option>`;
+    for (let i = 0; i < model.data.newInputCategories.length; i++) {
+      if(model.inputs.chosenInputCategory == i){
+      print += /*HTML*/`
+        <option selected value="${i}">${model.data.newInputCategories[i]}</option>
+      `;
+    }
+      else{
+        print += /*HTML*/`
+        <option value="${i}">${model.data.newInputCategories[i]}</option>
+      `;
+      }
+    }
+    return print
+  }
+  function chooseInputCategory(filter){
+    model.inputs.chosenInputCategory = filter;
+    updateView();
+    splitSalesObject();
+  }
 
-  function updateView() {
+
+function updateView() {
 //changePage('')
     switch (model.app.page) {
         case 'main':
-          updateInnerMainView()
+          updateMainView();
+          updateInnerMainView();
             break;
         case 'addNewItem':
-            addNewItem()
+            addNewItem();
             break;
         case 'editProfile':
-            editProfile()
+            editProfile();
             break;
         case 'editUsers':
-            editUsers()
+            editUsers();
             break;
         case 'editBuyNow':
-            editBuyNow()
+            editBuyNow();
             break;
         case 'editAuctions':
-            editAuctions()
+            editAuctions();
             break;
         case 'footerGallery':
-            updateFooterGalleryRealView()
+            updateFooterGalleryRealView();
             break;
         case 'footerContact':
-            updateFooterContactView()
+            updateFooterContactView();
             break;
         case 'footerAbout':
-            updateFooterAboutView()
+            updateFooterAboutView();
             break;
         case '':
             
@@ -66,46 +89,46 @@
 
             break;
         case 'artists':
-          updateArtistView()
+          updateArtistView();
             break;
         case 'addSaleObject':
-          addSaleObjekt()
+          addSaleObjekt();
           break;
         case 'auctionOnly':
-          updateAuctionOnly()
+          updateAuctionOnly();
             break;
         case 'buyAndAuction':
-          updateBuyAndAuction()
+          updateBuyAndAuction();
             break;
         case 'buyOnly':
-          updateBuyOnly()
+          updateBuyOnly();
             break;
         case 'galleryAndArchive':
-          updateGalleryAndArchiveView()
+          updateGalleryAndArchiveView();
             break;
         case 'galleryOnly':
-          updateGalleryView()
+          updateGalleryView();
             break;
         case 'archiveOnly':
-          updateArchiveView()
+          updateArchiveView();
             break;
         case 'registrationAndLogIn':
-          updateRegistrationAndLogInView()
+          updateRegistrationAndLogInView();
             break;
         case 'singleArtwork':
-          updateSingleArtworkpieceProfileView()
+          updateSingleArtworkpieceProfileView();
             break;
         case 'profile':
-          userProfileView()
+          userProfileView();
             break;
         case 'admin':
-            updateAdminView()
+            updateAdminView();
             break;
         case 'adminCheckpoint':
-            updateAdminCheckpointView()
+            updateAdminCheckpointView();
             break;
         default:
-            updateInnerMainView()
+            updateInnerMainView();
             break;
     }
     

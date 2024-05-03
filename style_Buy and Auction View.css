@@ -25,3 +25,23 @@
     position: absolute;
     margin: 10px 0px 0px 690px;
 }
+#buyImage{
+    background-image: url("bilder/Buy.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 78px;
+}
+#auctionImage{
+    background-image: url("bilder/Auction.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 78px;
+}

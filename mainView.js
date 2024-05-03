@@ -1,4 +1,55 @@
 updateMainView()
+
+function makeNavBar(){
+if(model.app.user == ''){
+return /*HTML*/`
+    <div class="item item-2">
+        <span class="navigationBar">
+            <div class="tmtm-L" onclick="changePage('buyAndAuction')">Kjøp og auksjon</div>
+            <div class="brdrL">
+                <div class="tmtm-L" onclick="changePage('artists')">Kunstnerne våre</div>
+            </div>
+            <div class="brdrL">
+                <div class="tmtm-R" onclick="changePage('galleryAndArchive')">Galleri og arkiv</div>
+            </div>
+            <div id=registreringOgProfil class="brdrL">
+                <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">
+                    <div id=registreringOgProfil class="brdrL">
+                        <div onclick="changePage('registrationAndLogIn')">
+                            Registrering/logg inn
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+`;}    
+    else {
+        return /*HTML*/`
+    <div class="item item-2">
+        <span class="navigationBar">
+            <div class="tmtm-L" onclick="changePage('buyAndAuction')">Kjøp og auksjon</div>
+            <div class="brdrL">
+                <div class="tmtm-L" onclick="changePage('artists')">Kunstnerne våre</div>
+            </div>
+            <div class="brdrL">
+                <div class="tmtm-R" onclick="changePage('galleryAndArchive')">Galleri og arkiv</div>
+            </div>
+            <div id=registreringOgProfil class="brdrL">
+                <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">
+                <div id=registreringOgProfil class="brdrL">
+                <div onclick="changePage('profile')">
+                    Profil
+                </div>
+            </div>
+            </div>
+            </div>
+        </span>
+    </div>
+`;}
+}
+
+
 function updateMainView() {
     app.innerHTML = /*HTML*/ `
     
@@ -7,20 +58,7 @@ function updateMainView() {
             <div id="logoGoHere" onclick="changePage('main')"></div>
             <input type="text" id="søkefeltHer" placeholder="Søk her..."/>
         </div> 
-        <div class="item item-2">
-            <span class="navigationBar">
-                <div class="tmtm-L" onclick="changePage('buyAndAuction')">Kjøp og auksjon</div>
-                <div class="brdrL">
-                    <div class="tmtm-L" onclick="changePage('artists')">Kunstnerne våre</div>
-                </div>
-                <div class="brdrL">
-                    <div class="tmtm-R" onclick="changePage('galleryAndArchive')">Galleri og arkiv</div>
-                </div>
-                <div id=registreringOgProfil class="brdrL">
-                    <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">Registrering/Profil</div>
-                </div>
-            </span>
-        </div>
+        ${makeNavBar()}
         <div class="item item-3">
             <div id="appingtonTheMother">
                 <div id="appingtonTheSecond"></div>

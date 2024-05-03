@@ -1,12 +1,13 @@
 let app = document.getElementById("app")
 const model = {
     app: {
-        user: 'kimmi',
-        page: 'addSaleObject',
+        user: '',
+        page: 'registrationAndLogIn',
     },
     inputs: {
         searchBar: null, //'artItems','artists','detailed search',
         chosenCategory: 'null',
+        chosenInputCategory: 'null',
         loginView: {
           errorMessage: '',
           userName: null,
@@ -15,9 +16,9 @@ const model = {
         },
 
         registerUser: {
-          userName: '',
-          password: '',
-          fullName: '',
+          userNameInput: '',
+          passwordInput: '',
+          fullNameInput: '',
           profilePicture: '',
           email: '',
           artist: '',
@@ -41,6 +42,7 @@ const model = {
         fullNameInput: 'Martin Ingolfsrud Innvær',
         profilePicture: 'https://hips.hearstapps.com/hmg-prod/images/martini-recipe-1657532229.jpg?crop=1.00xw:0.334xh;0,0.189xh&resize=1024:*',
         email: '',
+        artist: '',
       },
       {
         userNameInput: 'kimmi',
@@ -48,6 +50,7 @@ const model = {
         fullNameInput: 'Kim H. Thoresen',
         profilePicture: 'https://image.spreadshirtmedia.net/image-server/v1/compositions/T828A525PA1779PT32X21Y0D177544343W7893H7893/views/1,width=550,height=550,appearanceId=525,backgroundColor=CAED60,noPt=true/doggo-meme-belteveske.jpg',
         email: '',
+        artist: '',
       },
       {
         userNameInput: 'marshan',
@@ -55,6 +58,7 @@ const model = {
         fullNameInput: 'Maren S. Tveit',
         profilePicture: 'https://img.pokemondb.net/artwork/large/mareep.jpg',
         email: '',
+        artist: '',
       }, 
       {
         userNameInput: 'bennyboy',
@@ -62,6 +66,7 @@ const model = {
         fullNameInput: 'Benjamin M. Søiland',
         profilePicture: 'https://cdn.discordapp.com/attachments/1103497924215840818/1232620633637257238/thats_all_folks.png?ex=662a1eec&is=6628cd6c&hm=31f003cbfae27221a0424593b393ed6575788d4914c7ed4a79a4f3e5bea9df34&',
         email: '',
+        artist: '',
       }, 
       {
         userNameInput: 'morris',
@@ -69,6 +74,7 @@ const model = {
         fullNameInput: 'Martin M. Ristvedt',
         profilePicture: 'https://i.ytimg.com/vi/Oan1YaBSoY0/maxresdefault.jpg',
         email: '',
+        artist: '',
       },
     ],
 
@@ -79,7 +85,10 @@ const model = {
         category: '',
         artistName: '',
         price: '',
+        inputtedDate: '',
       },
+
+      newInputCategories: ["Auksjon", "Salg", "Galleri"],
 
       categories: ["maleri","treverk","fotografi","litteratur","avantgarde/eksperimentelt",
       "skulptur", "strikketøy","rosemaling", "collage"],
