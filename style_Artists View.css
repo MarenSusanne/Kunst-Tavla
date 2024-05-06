@@ -1,7 +1,11 @@
-#para {
-    height: 554px;
-    width: 882px;
+.para {
+    width: 867px;
+}
+#overflowContainer{
+    display: flex;
+    flex-direction: column;
     overflow: auto;
+    height: 554px;
 }
 
 .artistRow {
@@ -20,7 +24,6 @@
     width: 186px;
     height: 164px;
 }
-
-h2 {
-    margin-bottom: 0px;
+.artistName{
+    text-transform: capitalize;
 }

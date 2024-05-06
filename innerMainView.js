@@ -6,8 +6,9 @@ function updateInnerMainView() {
             <h1 class="stopPadding">Auksjoner</h1>
 
             <div class="nickBottom">
-               
-               
+            </div>
+            <div id="newAuctionContainer">
+            ${printAuctions()}
             </div>
         </div>
         <div class="item innerAir" id="news">
@@ -32,5 +33,18 @@ function updateInnerMainView() {
 
 function printNews(){
     let print = "";
+    return print;
+}
+
+function printAuctions(){
+    let print = "";
+    for (let i = model.data.auctionObjects.length-1; i >= model.data.auctionObjects.length-5; i--) {
+        print += `
+            <div class="frontAuctionContainer">
+                <img src="${model.data.auctionObjects[i].artId}" class="mainViewImage"></img>
+                <div>${model.data.auctionObjects[i].aboutPictureText}</div>
+            </div>
+        `;
+    }
     return print;
 }

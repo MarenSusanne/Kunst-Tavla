@@ -2,7 +2,7 @@ let app = document.getElementById("app")
 const model = {
     app: {
         user: '',
-        page: 'artists',
+        page: 'main',
     },
     inputs: {
         searchBar: null, //'artItems','artists','detailed search',
@@ -152,6 +152,58 @@ const model = {
           newBid: '',
           bidders: ['Mona'],
           previousBids: ['200'],
+        },
+        {
+          seller: 'Nikoline',
+          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
+          aboutPictureText:'Sjalu(2007)',
+          category: 5,
+          artistName:'Nico Widerberg',
+          auctionEndTime: 'Fri May 10 2024 14:00:50 GMT+0200 (Central European Summer Time)'
+          ,
+          activeBid: '34000',
+          newBid: '',
+          bidders: ['Lisa','Morten','Beate'],
+          previousBids: ['25000','28000','32000'],
+        },
+        {
+          seller: 'Nikoline',
+          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
+          aboutPictureText:'Sjalu(2007)',
+          category: 5,
+          artistName:'Nico Widerberg',
+          auctionEndTime: 'Fri May 10 2024 14:00:50 GMT+0200 (Central European Summer Time)'
+          ,
+          activeBid: '34000',
+          newBid: '',
+          bidders: ['Lisa','Morten','Beate'],
+          previousBids: ['25000','28000','32000'],
+        },
+        {
+          seller: 'Nikoline',
+          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
+          aboutPictureText:'Sjalu(2007)',
+          category: 5,
+          artistName:'Nico Widerberg',
+          auctionEndTime: 'Fri May 10 2024 14:00:50 GMT+0200 (Central European Summer Time)'
+          ,
+          activeBid: '34000',
+          newBid: '',
+          bidders: ['Lisa','Morten','Beate'],
+          previousBids: ['25000','28000','32000'],
+        },
+        {
+          seller: 'Nikoline',
+          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
+          aboutPictureText:'Sjalu(2007)',
+          category: 5,
+          artistName:'Nico Widerberg',
+          auctionEndTime: 'Fri May 10 2024 14:00:50 GMT+0200 (Central European Summer Time)'
+          ,
+          activeBid: '34000',
+          newBid: '',
+          bidders: ['Lisa','Morten','Beate'],
+          previousBids: ['25000','28000','32000'],
         },
         {
           seller: 'Nikoline',

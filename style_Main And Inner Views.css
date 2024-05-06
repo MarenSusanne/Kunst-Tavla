@@ -286,8 +286,17 @@ div.tentativeSubtitle {
     color: goldenrod;
 }
 
-
-
+/*Auksjons delen*/
+.mainViewImage{
+    height: 110px;
+}
+.frontAuctionContainer{
+    display: flex;
+}
+#newAuctionContainer{
+    height: 220px;
+    overflow: auto;
+}
 
 /*table{
     height: 100cap; width: 100%; border-collapse: collapse;
