@@ -287,15 +287,47 @@ div.tentativeSubtitle {
 }
 
 /*Auksjons delen*/
-.mainViewImage{
+.mainViewImage {
     height: 110px;
 }
-.frontAuctionContainer{
+
+.frontAuctionContainer {
     display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
 }
-#newAuctionContainer{
-    height: 220px;
+
+.mainPageAuctionTitleStyle {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #574c44;
+}
+
+#newAuctionContainer {
+    height: 216px;
     overflow: auto;
+}
+
+
+
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#newsOverflow {
+    height: 200px;
+    overflow: auto;
+}
+
+.innerMainNewsTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #574c44;
 }
 
 /*table{

@@ -13,7 +13,7 @@ function updateInnerMainView() {
         </div>
         <div class="item innerAir" id="news">
             <h1 class="stopPadding">Nyheter</h1>
-            <div>${printNews()}</div>
+            <div id="newsOverflow">${printNews()}</div>
         </div>
         <div class="item innerAir" id="welcome">
             <div>
@@ -31,18 +31,27 @@ function updateInnerMainView() {
     `
 }
 
-function printNews(){
+function printNews() {
     let print = "";
+    for (let i = 0; i < model.data.newsObjekts.length; i++) {
+        print += `
+            <div class="newsContainer">
+                <div class="innerMainNewsTitle">${model.data.newsObjekts[i].newsTitle}</div>
+                <div class="newsDateStyle"><b>Tid:</b>  ${model.data.newsObjekts[i].newsDate}</div>
+                <div class="newsLocationStyle"><b>Sted:</b>  ${model.data.newsObjekts[i].newsLocation}</div>
+            </div>
+        `;
+    }
     return print;
 }
 
-function printAuctions(){
+function printAuctions() {
     let print = "";
-    for (let i = model.data.auctionObjects.length-1; i >= model.data.auctionObjects.length-5; i--) {
+    for (let i = model.data.auctionObjects.length - 1; i >= model.data.auctionObjects.length - 5; i--) {
         print += `
             <div class="frontAuctionContainer">
-                <img src="${model.data.auctionObjects[i].artId}" class="mainViewImage"></img>
-                <div>${model.data.auctionObjects[i].aboutPictureText}</div>
+                <div class="mainPageAuctionTitleStyle">${model.data.auctionObjects[i].aboutPictureText}</div>
+                <div>${calculateTimeRemaining(model.data.auctionObjects[i].auctionEndTime)}</div>
             </div>
         `;
     }

@@ -1,9 +1,9 @@
 function printAuctionView() {
     let print = "";
     for (let i = 0; i < model.data.auctionObjects.length; i++) {
-        
+
         print += /*HTML*/ `
-        <div class="container_innerBuyGallery">
+        <div class="container_innerBuyGallery" onclick="changeArtwork(${model.data.auctionObjects[i].id}, 'auction')">
         <img src="${model.data.auctionObjects[i].artId}" class="standardBuyImageSize"/>
             <div class="innerInfo">
             <h3 class="container_text">${model.data.auctionObjects[i].aboutPictureText}</h3>
@@ -17,7 +17,7 @@ function printAuctionView() {
       `
     }
     return print
-        
+
 }
 
 function calculateTimeRemaining(auctionEndTime) {
@@ -50,8 +50,8 @@ function calculateTimeRemaining(auctionEndTime) {
     return `<i>${days}dag(er) ${hours}time(r) igjen</i>`;
 }
 
-function updateAuctionOnly(){
-    
+function updateAuctionOnly() {
+
     document.getElementById('appingtonTheSecond').innerHTML =  /*HTML*/`
       <div class="container_mainGallery">
           <div id="galleryTitle">
@@ -63,5 +63,5 @@ function updateAuctionOnly(){
       </div>
       `
 
-     
+
 }

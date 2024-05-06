@@ -1,6 +1,18 @@
 
 //adminCheckpoint
+
+function giveIdToArtwork() {
+  let highestNum = 0;
+
+  for (let i = 0; i < model.data.salesObjects.length; i++) {
+    let currentArtPiece = model.data.salesObjects[i]
+    if (currentArtPiece.id > highestNum) highestNum = currentArtPiece.id
+  }
+  return highestNum + 1
+}
+
 function acceptInputForSale(index) {
+  model.data.salesObjectsToCheck[index].id = giveIdToArtwork()
   model.data.salesObjects.push(model.data.salesObjectsToCheck[index]);
   updateAdminCheckpointView();
   declineInputForSale();
@@ -64,41 +76,41 @@ function newInputCountdownDate(inputValue) {
   addSaleObjekt();
 }
 
-function splitSalesObject(){
- if (document.getElementById('chooseYourInputCategory').value == 0){
-  document.getElementById("theNameOfSeller").disabled = false;
-  document.getElementById("artPictureLink").disabled = false;
-  document.getElementById("artPictureAltText").disabled = false;
-  document.getElementById("chooseYourCategory").disabled = false;
-  document.getElementById("theNameOfArtist").disabled = false;
-  document.getElementById("putInYourPrice").disabled = false;
-  document.getElementById("putInYourDate").disabled = false;
- } else if (document.getElementById('chooseYourInputCategory').value == 1){
-  document.getElementById("theNameOfSeller").disabled = false;
-  document.getElementById("artPictureLink").disabled = false;
-  document.getElementById("artPictureAltText").disabled = false;
-  document.getElementById("chooseYourCategory").disabled = false;
-  document.getElementById("theNameOfArtist").disabled = false;
-  document.getElementById("putInYourPrice").disabled = false;
-  document.getElementById("putInYourDate").disabled = true;
- } else if (document.getElementById('chooseYourInputCategory').value == 2) {
-  document.getElementById("theNameOfSeller").disabled = false;
-  document.getElementById("artPictureLink").disabled = false;
-  document.getElementById("artPictureAltText").disabled = false;
-  document.getElementById("chooseYourCategory").disabled = false;
-  document.getElementById("theNameOfArtist").disabled = false;
-  document.getElementById("putInYourPrice").disabled = true;
-  document.getElementById("putInYourDate").disabled = true;
- } else{
-  //document.querySelectorAll('#allInputs input')
-  document.getElementById("theNameOfSeller").disabled = true;
-  document.getElementById("artPictureLink").disabled = true;
-  document.getElementById("artPictureAltText").disabled = true;
-  document.getElementById("chooseYourCategory").disabled = true;
-  document.getElementById("theNameOfArtist").disabled = true;
-  document.getElementById("putInYourPrice").disabled = true;
-  document.getElementById("putInYourDate").disabled = true;
- }
+function splitSalesObject() {
+  if (document.getElementById('chooseYourInputCategory').value == 0) {
+    document.getElementById("theNameOfSeller").disabled = false;
+    document.getElementById("artPictureLink").disabled = false;
+    document.getElementById("artPictureAltText").disabled = false;
+    document.getElementById("chooseYourCategory").disabled = false;
+    document.getElementById("theNameOfArtist").disabled = false;
+    document.getElementById("putInYourPrice").disabled = false;
+    document.getElementById("putInYourDate").disabled = false;
+  } else if (document.getElementById('chooseYourInputCategory').value == 1) {
+    document.getElementById("theNameOfSeller").disabled = false;
+    document.getElementById("artPictureLink").disabled = false;
+    document.getElementById("artPictureAltText").disabled = false;
+    document.getElementById("chooseYourCategory").disabled = false;
+    document.getElementById("theNameOfArtist").disabled = false;
+    document.getElementById("putInYourPrice").disabled = false;
+    document.getElementById("putInYourDate").disabled = true;
+  } else if (document.getElementById('chooseYourInputCategory').value == 2) {
+    document.getElementById("theNameOfSeller").disabled = false;
+    document.getElementById("artPictureLink").disabled = false;
+    document.getElementById("artPictureAltText").disabled = false;
+    document.getElementById("chooseYourCategory").disabled = false;
+    document.getElementById("theNameOfArtist").disabled = false;
+    document.getElementById("putInYourPrice").disabled = true;
+    document.getElementById("putInYourDate").disabled = true;
+  } else {
+    //document.querySelectorAll('#allInputs input')
+    document.getElementById("theNameOfSeller").disabled = true;
+    document.getElementById("artPictureLink").disabled = true;
+    document.getElementById("artPictureAltText").disabled = true;
+    document.getElementById("chooseYourCategory").disabled = true;
+    document.getElementById("theNameOfArtist").disabled = true;
+    document.getElementById("putInYourPrice").disabled = true;
+    document.getElementById("putInYourDate").disabled = true;
+  }
 }
 //registrationAndLogInView
 function addNewUser() {
@@ -132,21 +144,29 @@ function newInputArtist(inputValue) {
 }
 
 //buyView
-function chooseCategory(filter){
+function chooseCategory(filter) {
   model.inputs.chosenCategory = filter;
   updateView();
   console.log(filter);
 }
 
 
-function changePage(page){
+function changePage(page) {
   model.app.page = page;
   updateView();
 }
 
-function countDownSystem () {
+function countDownSystem() {
 
 }
+
+function changeArtwork(artworkId, artworkSalesType) {
+  model.inputs.chosenArtworkSalesType = artworkSalesType
+  model.inputs.chosenArtwork = artworkId
+  changePage('singleArtwork');
+}
+
+
 
 /*// Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();

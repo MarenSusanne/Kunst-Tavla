@@ -1,7 +1,8 @@
 .para {
     width: 867px;
 }
-#overflowContainer{
+
+#overflowContainer {
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -9,7 +10,7 @@
 }
 
 .artistRow {
-    border: 1px solid purple;
+    border: 1px solid grey;
     height: 166px;
     margin-bottom: 12px;
     display: flex;
@@ -18,12 +19,13 @@
 }
 
 .artistProfileProportions {
-    border: 1px solid blue;
+    border-right: 1px solid grey;
     background-color: blanchedalmond;
     /*height: max-content;*/
     width: 186px;
-    height: 164px;
+    height: auto;
 }
-.artistName{
+
+.artistName {
     text-transform: capitalize;
 }

@@ -5,8 +5,8 @@ function updateGalleryView() {
   for (let i = 0; i < model.data.artObject.length; i++) {
     print += /*HTML*/`
     <div class="container_innerGallery">
-        <div>
-            <img src="${model.data.artObject[i].artPicture}" class="standardGalleryImageSize"/>
+        <div onclick="changeArtwork(${model.data.artObject[i].id})" >
+            <img src="${model.data.artObject[i].artId}" class="standardGalleryImageSize"/>
         </div>
     </div>
     `

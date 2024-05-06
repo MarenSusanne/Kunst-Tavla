@@ -1,7 +1,32 @@
-function updateSingleArtworkpieceProfileView(){
+function findArtworkBuy() {
+    return model.data.salesObjects.find((o) => o.id == model.inputs.chosenArtwork)
+}
+function findArtworkAuction() {
+    return model.data.auctionObjects.find((o) => o.id == model.inputs.chosenArtwork)
+}
+function findArtworkGallery() {
+    return model.data.artObject.find((o) => o.id == model.inputs.chosenArtwork)
+}
+
+function findArtwork() {
+    if (model.inputs.chosenArtworkSalesType == 'buy') {
+        return findArtworkBuy()
+    } else if (model.inputs.chosenArtworkSalesType == 'auction') {
+        return findArtworkAuction()
+    } else if (model.inputs.chosenArtworkSalesType == 'gallery') {
+        return findArtworkGallery()
+    }
+}
+
+function updateSingleArtworkpieceProfileView() {
+    let currentArtwork = findArtwork()
     document.getElementById("appingtonTheSecond").innerHTML = /*HTML*/`
     <div class="artworkProfile_Container">
-        <div class="item section_1">1</div>
+        <div class="item section_1">
+            <div class="singleImageStyling">
+                <img src="${currentArtwork.artId}" id="singleImage">
+            </div>
+        </div>
         
         <div class="section_2"></div>
 
@@ -9,53 +34,41 @@ function updateSingleArtworkpieceProfileView(){
             <div class="s3_a"></div>
             <div class="s3_b"></div>
             <div class="s3_c"></div>
-            <div class="item s3_d">d</div>
+            <div class="item s3_d">Kjøp og auksjon!</div>
             <div class="s3_e"></div>
-            <div class="item s3_f">f</div>
+            <div class="item s3_f">${calculateTimeRemaining(currentArtwork.auctionEndTime)}</div>
             <div class="s3_g"></div>
             <div class="item s3_h">h</div>
             <div class="item s3_i">i</div>
         </div>
 
-        <div class="item section_4">4</div>
-        <div class="item section_5">5</div>
-        <div class="item section_6">6</div>
+        <div class="item section_4">Legg nytt bud</div>
+        <div class="item section_5">Bekreft</div>
+        <div class="item section_6">
+            <input class="sect6MinorMargin ">
+        </div>
 
         <div class="item section_7">
             <div class="s7_d">
-                <div>xx:xx Tog tåget ner, du skulle 1000kr</div>
-                <div>xx:xx dumpa mig B'attre på 1100kr</div>
-                <div>xx:xx plats än genom telefon 1200kr</div>
-                <div>xx:xx Jag visste inte vad som 1300kr</div>
-                <div>xx:xx väntade Första 1500kr</div>
-                <div>xx:xx semesteren på fyra år  1700kr</div>
-                <div>xx:xx Som jag förstod var vi 2000kr</div>
-                <div>xx:xx förälskade Du sa att 2350kr</div>
+                ${currentArtwork.bidders}
+                ${currentArtwork.previousBids}
             </div>
             <div>
-                <i>Minste bud: 2700kr</i>
+               <i> Minste bud: ${currentArtwork.activeBid + 500}</i>
             </div>
         </div>
         <div class="section_8"></div>
-        <div class="item section_9">9 - Lorem joej fdf jg kjkf fhi fh jd fihfdkh fdf dff df fdfjf hfk f sd dfhf bhvhv vhuf jfnf jkfvjkjvkkkg gjgglgg fklkgg dkdjllkgg kgfgk jggkggkjg</div>
+        <div class="item section_9">
+            Coming soon...
+        </div>
 
         <div class="section_10"></div>
         
         <div class="section_11"></div>
         <div class="item section_12">
-            <p class="s12_head">12</p>
+            <p class="s12_head">${currentArtwork.aboutPictureText}</p>
             <p class="s12_p">
-                12 - Lorem joej fdf jg kjkf fhi fh jd fihfdkh fdf
-                dff df fdfjf hfk f sd dfhf bhvhv vhuf jfnf jkfvjkjvkkkg
-                gjgglgg fklkgg dkdjllkgg kgfgk jggkggkjg Lorem joej fdf
-                jg kjkf fhi fh jd fihfdkh fdf dff df fdfjf hfk f sd dfhf
-                bhvhv vhuf jfnf jkfvjkjvkkkg jgglgg fklkgg dkdjllkgg
-                kgfgk jggkggkjg Lorem kjkf fhi fh jd fihfdkh fdf
-                dff df fdfjf hfk f sd dfhf bhvhv vhuf jfnf jkfvjkjvkkkg
-                gjgglgg fklkgg dkdjllkgg kgfgk jggkggkjg Lorem joej fdf
-                jg kjkf fhi fh jd fihfdkh fdf dff df fdfjf hfk f sd dfhf
-                bhvhv vhuf jfnf jkfvjkjvkkkg jgglgg fklkgg dkdjllkgg
-                kgfgk jggkggkjg
+                ${currentArtwork.aboutPictureDescription}
             </p>
         </div>
         <div class="section_13"></div>

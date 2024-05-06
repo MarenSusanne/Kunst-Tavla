@@ -1,31 +1,36 @@
-.container_innerBuyGallery{
+.container_innerBuyGallery {
     border: solid;
     display: flex;
     margin: 10px;
 }
-#printBuyGallery{
+
+#printBuyGallery {
     display: flex;
     flex-direction: column;
     gap: 0px;
     margin: 0px 0px 0px 0px;
     overflow: auto;
-    height: 466px;
+    height: 476px;
 }
-.innerInfo{
+
+.innerInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
     font-size: x-large;
 }
-.standardBuyImageSize{
+
+.standardBuyImageSize {
     width: 300px;
 }
-.buyFilter{
+
+.buyFilter {
     position: absolute;
     margin: 10px 0px 0px 690px;
 }
-#buyImage{
+
+#buyImage {
     background-image: url("bilder/Buy.jpg");
     background-size: cover;
     display: flex;
@@ -35,7 +40,8 @@
     font-weight: bolder;
     font-size: 78px;
 }
-#auctionImage{
+
+#auctionImage {
     background-image: url("bilder/Auction.jpg");
     background-size: cover;
     display: flex;

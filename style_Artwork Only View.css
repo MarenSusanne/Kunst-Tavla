@@ -1,12 +1,17 @@
 .artworkProfile_Container {
-    height: 529px; /*554px - (margin-top + margin-bottom)*/
-    margin-bottom: 10px; margin-top: 15px;
-    margin-left: 30px; margin-right: 30px;
+    height: 529px;
+    /*554px - (margin-top + margin-bottom)*/
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
     /*row-gap: 10px; column-gap: 60px;*/
 
     display: grid;
-    grid-template-rows: 152px /*152px, formerly 150 but added togther they're 152.*/21px 28px 88px 10px 62px 10px 1fr 25px;
-    grid-template-columns: 25px  minmax(453px,453px)  25px    50px                   87px 172px;
+    grid-template-rows: 152px
+        /*152px, formerly 150 but added togther they're 152.*/
+        21px 28px 88px 10px 62px 10px 1fr 25px;
+    grid-template-columns: 25px minmax(453px, 453px) 25px 50px 87px 172px;
     grid-template-areas:
         'artwork artwork artwork                  trueGap     biddingAuctionArea    biddingAuctionArea biddingAuctionArea'
 
@@ -21,112 +26,188 @@
 
         'artLeftGap artDescription artRightGap    trueGap     otherBids             otherBids otherBids'
         'artBottomGap artBottomGap artBottomGap   trueGap     otherBids             otherBids otherBids'
-        ;
+    ;
 }
 
-.section_1{
+.section_1 {
     grid-area: artwork;
 }
 
-.section_2{
+.section_2 {
     grid-area: trueGap;
 }
 
 .section_3 {
     grid-area: biddingAuctionArea;
-    text-align: center; align-content: center;
+    text-align: center;
+    align-content: center;
     display: grid;
     grid-template-rows: 10px 32px 4fr 5fr 3fr 50px 10px;
     grid-template-columns: 25px 126px 1fr 25px;
     grid-template-areas:
-    'gapR    gap_1           gap_1              gapL'
-    'gapR    addBid          addBid             gapL'
-    'gapR    gap_2           gap_2              gapL'
-    'gapR    countdown       countdown          gapL'
-    'gapR    gap_3           gap_3              gapL'
-    'gapR    currntBidText   currentActualBid   gapL'
+        'gapR    gap_1           gap_1              gapL'
+        'gapR    addBid          addBid             gapL'
+        'gapR    gap_2           gap_2              gapL'
+        'gapR    countdown       countdown          gapL'
+        'gapR    gap_3           gap_3              gapL'
+        'gapR    currntBidText   currentActualBid   gapL'
     ;
-}     .s3_a{
-        grid-area: gapR;
-    } .s3_b{
-        grid-area: gap_1;
-    } .s3_c{
-        grid-area: gapL;
-    } .s3_d{
-        grid-area: addBid;
-        text-align: center; align-content: center;
-    } .s3_e{
-        grid-area: gap_2;
-    } .s3_f{
-        grid-area: countdown;
-        text-align: center; align-content: center;
-        color: #76a5af; font-style: italic;
-    } .s3_g{
-        grid-area: gap_3;
-    } .s3_h{
-        grid-area: currntBidText;
-        text-align: center; align-content: center;
-    } .s3_i{
-        grid-area: currentActualBid;
-        text-align: center; align-content: center;
-    }
+}
+
+.s3_a {
+    grid-area: gapR;
+}
+
+.s3_b {
+    grid-area: gap_1;
+}
+
+.s3_c {
+    grid-area: gapL;
+}
+
+.s3_d {
+    grid-area: addBid;
+    text-align: center;
+    align-content: center;
+    background-color: lightgray;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.s3_e {
+    grid-area: gap_2;
+}
+
+.s3_f {
+    grid-area: countdown;
+    text-align: center;
+    align-content: center;
+    color: #76a5af;
+    font-style: italic;
+}
+
+.s3_g {
+    grid-area: gap_3;
+}
+
+.s3_h {
+    grid-area: currntBidText;
+    text-align: center;
+    align-content: center;
+}
+
+.s3_i {
+    grid-area: currentActualBid;
+    text-align: center;
+    align-content: center;
+}
+
 /* The old... the suffering... the ailing... (all of them were me)*/
 
-.section_4{
+.section_4 {
     grid-area: addNewBid;
-    text-align: center; align-content: center;
+    text-align: center;
+    align-content: center;
 }
-.section_5{
+
+.section_5 {
     grid-area: confirm;
     font-weight: bold;
-    text-align: center; align-content: center;
-} .section_6 {
+    text-align: center;
+    align-content: center;
+}
+
+.section_6 {
     grid-area: input;
     background-color: white;
-    align-content: center;
+    align-items: baseline;
     font-size: 23px;
+    height: 26px;
 }
-.section_7{
+
+.sect6MinorMargin {
+    position: absolute;
+    margin: auto;
+    height: 22px;
+    padding-left: 10px;
+    width: 165px;
+    border: none;
+}
+
+.section_7 {
     grid-area: prevbids;
     color: #999999;
-    padding-left: 12px; padding-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     background-color: white;
-} .s7_d{
+}
+
+.s7_d {
     overflow: auto;
-    margin: 0px; 
+    margin: 0px;
 }
 
 .section_8 {
     grid-area: prevbidGap;
 }
-.section_9{
+
+.section_9 {
     grid-area: otherBids;
-    padding: 20px; padding-top: 16px;
+    padding: 20px;
+    padding-top: 16px;
     text-align: justify;
     overflow: auto;
+    /*COMING SOON ONLY. PLEASE DELETE LATER.*/
+    font-style: italic;
+    color: grey;
 }
 
-.section_10{
+.section_10 {
     grid-area: artGap;
 }
 
-.section_11{
+.section_11 {
     grid-area: artLeftGap;
 }
 
-.section_12{
+.section_12 {
     grid-area: artDescription;
-    text-align: center; padding:50px; padding-top: 0px;
+    text-align: center;
+    padding: 50px;
+    padding-top: 0px;
     overflow: auto;
-} .s12_head{
-    font-size: 20px; margin-top: 15px;
-    } .s12_p{
-    text-align: justify; margin: 0px; margin-top: 10px;
-    }
+}
 
-.section_13{
+.s12_head {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.s12_p {
+    text-align: justify;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.section_13 {
     grid-area: artRightGap;
 }
-.section_14{
+
+.section_14 {
     grid-area: artBottomGap;
+}
+
+#singleImage {
+    max-height: 359px;
+    max-width: 500px;
+    /*Sykkelbilde er bredere enn gitt størrelse, fiks dette?§!*/
+}
+
+.singleImageStyling {
+    height: 359px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
 }
