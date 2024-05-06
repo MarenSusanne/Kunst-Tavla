@@ -120,7 +120,6 @@ function addNewUser() {
 function newInputFullName(inputValue) {
   model.inputs.registerUser.fullNameInput = inputValue;
   updateView();
-  console.log(inputValue);
 }
 function newInputUserName(inputValue) {
   model.inputs.registerUser.userNameInput = inputValue;
@@ -141,6 +140,14 @@ function newInputProfilePicture(inputValue) {
 function newInputArtist(inputValue) {
   model.inputs.registerUser.artist = inputValue;
   updateView();
+}
+
+function clearInputs(){
+  model.inputs.registerUser.fullNameInput = '';
+  model.inputs.registerUser.email = '';
+  model.inputs.registerUser.passwordInput = '';
+  model.inputs.registerUser.profilePicture = '';
+  model.inputs.registerUser.userNameInput = '';
 }
 
 //buyView

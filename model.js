@@ -2,7 +2,7 @@ let app = document.getElementById("app")
 const model = {
     app: {
         user: '',
-        page: 'singleArtwork',
+        page: 'main',
     },
     inputs: {
         searchBar: null, //'artItems','artists','detailed search',
@@ -212,12 +212,12 @@ const model = {
         },
         {
           id:2,
-          seller: 'Nikoline',
-          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
-          aboutPictureText:'Sjalu(2007)',
+          seller: 'Kjell',
+          artId: 'https://www.fineart.no/i/img_img/1036514-0.jpg/w=1024,h=768/Jonny_Hurts_-_Hangry_bird_(3D)_2_40.jpg',
+          aboutPictureText:'Hangry bird (3D)',
           aboutPictureDescription:'',
-          category: 5,
-          artistName:'Nico Widerberg',
+          category: 4,
+          artistName:'Jonny Hurts',
           auctionEndTime: 'Fri May 06 2024 13:00:50 GMT+0200 (Central European Summer Time)'
           ,
           activeBid: 34000,
@@ -227,12 +227,12 @@ const model = {
         },
         {
           id:3,
-          seller: 'Nikoline',
-          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
-          aboutPictureText:'Sjalu(2007)',
+          seller: 'Øyvind',
+          artId: 'https://www.fineart.no/i/img_img/1042243-0.jpg/w=1024,h=768/Aleksander_Nordahl_-_Hvaldimir_No_4_-_The_White_Whale_70_x_47_cm_%7C_25+2AP.jpg',
+          aboutPictureText:'Hvaldimir No 4 - The White Whale',
           aboutPictureDescription:'',
-          category: 5,
-          artistName:'Nico Widerberg',
+          category: 2,
+          artistName:'Aleksander Nordahl',
           auctionEndTime: 'Fri May 07 2024 13:00:00 GMT+0200 (Central European Summer Time)'
           ,
           activeBid: 34000,
@@ -242,12 +242,12 @@ const model = {
         },
         {
           id:4,
-          seller: 'Nikoline',
-          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
-          aboutPictureText:'Sjalu(2007)',
+          seller: 'Kjersti',
+          artId: 'https://www.fineart.no/i/img_img/1042049-0.jpg/w=1024,h=768/Erle_M._Kyllingmark_-_An_exercise_in_unification__03.jpg',
+          aboutPictureText:'An exercise in unification',
           aboutPictureDescription:'',
-          category: 5,
-          artistName:'Nico Widerberg',
+          category: 2,
+          artistName:'Erle M. Kyllingmark',
           auctionEndTime: 'Fri May 07 2024 12:55:50 GMT+0200 (Central European Summer Time)'
           ,
           activeBid: 34000,
@@ -257,12 +257,12 @@ const model = {
         },
         {
           id:5,
-          seller: 'Nikoline',
-          artId: 'https://kunstnerforbundet.no/media/images/works/cover/xlarge/c86814b7866699f947aa5fab42e9180fa561ae91.jpg',
-          aboutPictureText:'Sjalu(2007)',
+          seller: 'Anders',
+          artId: 'https://www.fineart.no/i/img_img/1040680-0.jpg/w=1024,h=768/Clara_Hallencreutz_-_Porcelain_banana_100_x_137_cm.jpg',
+          aboutPictureText:'Porcelain banana',
           aboutPictureDescription:'',
           category: 5,
-          artistName:'Nico Widerberg',
+          artistName:'Clara Hallencreutz',
           auctionEndTime: 'Fri May 21 2024 14:00:50 GMT+0200 (Central European Summer Time)'
           ,
           activeBid: 34000,
@@ -278,7 +278,7 @@ const model = {
           artId: 'https://i.ebayimg.com/images/g/iYMAAOSw269jXD2D/s-l1600.jpg',
           aboutPictureText: 'Katt i Olje farger',
           category: 0,
-          artistName: 'gardenartsstudio',
+          artistName: 'Gardenartsstudio',
           price: 1000,
         },
         {
@@ -357,6 +357,7 @@ const model = {
           previousBids: [''],
         },
       ],
+      archivedSales:[],
     },
 
     // hei hei 

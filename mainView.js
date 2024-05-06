@@ -14,7 +14,7 @@ return /*HTML*/`
             </div>
             <div id=registreringOgProfil class="brdrL">
                 <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">
-                    <div id=registreringOgProfil class="">
+                    <div id=registreringOgProfil>
                         <div onclick="changePage('registrationAndLogIn')">
                             Registrering/logg inn
                         </div>
@@ -37,7 +37,7 @@ return /*HTML*/`
             </div>
             <div id=registreringOgProfil class="brdrL">
                 <div class="tmtm-R" onclick="changePage('registrationAndLogIn')">
-                <div id=registreringOgProfil class="brdrL">
+                <div id=registreringOgProfil>
                 <div onclick="changePage('profile')">
                     Profil
                 </div>

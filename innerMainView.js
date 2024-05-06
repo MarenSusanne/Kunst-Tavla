@@ -49,7 +49,7 @@ function printAuctions() {
     let print = "";
     for (let i = model.data.auctionObjects.length - 1; i >= model.data.auctionObjects.length - 5; i--) {
         print += `
-            <div class="frontAuctionContainer">
+            <div class="frontAuctionContainer" onclick="changeArtwork(${model.data.auctionObjects[i].id}, 'auction')">
                 <div class="mainPageAuctionTitleStyle">${model.data.auctionObjects[i].aboutPictureText}</div>
                 <div>${calculateTimeRemaining(model.data.auctionObjects[i].auctionEndTime)}</div>
             </div>

@@ -97,6 +97,10 @@
     align-content: center;
 }
 
+.nowBid{
+    margin: 15px 0px 0px 0px;
+}
+
 .s3_i {
     grid-area: currentActualBid;
     text-align: center;

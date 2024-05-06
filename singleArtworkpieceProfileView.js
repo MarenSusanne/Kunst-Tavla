@@ -38,23 +38,27 @@ function updateSingleArtworkpieceProfileView() {
             <div class="s3_e"></div>
             <div class="item s3_f">${calculateTimeRemaining(currentArtwork.auctionEndTime)}</div>
             <div class="s3_g"></div>
-            <div class="item s3_h">h</div>
-            <div class="item s3_i">i</div>
+            <div class="item s3_h">
+                <div class="nowBid">Nåværende Bud:</div>
+            </div>
+            <div class="item s3_i">
+                <div class="nowBid">${currentArtwork.activeBid},-</div>
+            </div>
         </div>
 
         <div class="item section_4">Legg nytt bud</div>
         <div class="item section_5">Bekreft</div>
         <div class="item section_6">
-            <input class="sect6MinorMargin ">
+            <input class="sect6MinorMargin" placeholder="${currentArtwork.activeBid + 500 + ',-'}">
         </div>
 
         <div class="item section_7">
             <div class="s7_d">
                 ${currentArtwork.bidders}
-                ${currentArtwork.previousBids}
+                ${currentArtwork.previousBids},-
             </div>
             <div>
-               <i> Minste bud: ${currentArtwork.activeBid + 500}</i>
+               <i> Minste bud: ${currentArtwork.activeBid + 500 + ',-'}</i>
             </div>
         </div>
         <div class="section_8"></div>

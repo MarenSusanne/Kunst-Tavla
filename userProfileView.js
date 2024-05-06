@@ -23,7 +23,6 @@ function userProfileView() {
                 <div class="item hori2">
                     <button class="petalBtn" onclick="changePage('addSaleObject')">Legg Til Objekt</button>
                     <h1>Mine Verk</h1>
-                    <p class="subtitle">the best blog in the world</p>
                     <div>${printUserArt()}</div>
                 </div>
             </div>
@@ -42,7 +41,7 @@ function userProfileView() {
             let print = "";
             for (let i = 0; i < model.data.artObject.length; i++) {
             if(model.data.artObject[i].artistName == model.app.user){
-                print += /*HTML*/`<img src="${model.data.artObject[i].artPicture}">`
+                print += /*HTML*/`<img src="${model.data.artObject[i].artId}" class="profileArtworks">`
         }
     }
 

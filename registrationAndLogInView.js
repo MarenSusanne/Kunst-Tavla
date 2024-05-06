@@ -10,13 +10,13 @@ function updateRegistrationAndLogInView() {
                         <input onchange="newInputFullName(this.value)" value="${model.inputs.registerUser.fullNameInput}" placeholder="Navn">
                     </div>
                     <div class="bitOfAir">
-                        <input onchange="newInputUserName(this.value)" placeholder="Brukernavn">
+                        <input onchange="newInputUserName(this.value)" value="${model.inputs.registerUser.userNameInput}" placeholder="Brukernavn">
                     </div>
                     <div class="bitOfAir">
-                        <input onchange="newInputEmail(this.value)" placeholder="Epost">
+                        <input onchange="newInputEmail(this.value)" value="${model.inputs.registerUser.email}" placeholder="Epost">
                     </div>
                     <div class="bitOfAir">
-                        <input onchange="newInputPassword(this.value)" placeholder="Passord">
+                        <input onchange="newInputPassword(this.value)" value="${model.inputs.registerUser.passwordInput}" placeholder="Passord">
                     </div>
                     <div class="bitOfAir">
                         <input onchange="newInputProfilePicture(this.value)" placeholder="Bilde">

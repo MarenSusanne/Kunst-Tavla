@@ -69,8 +69,8 @@ function updateBuyOnly() {
           <div id="printBuyGallery">
               ${printBuyView()}
               <select class="buyFilter" onchange="chooseCategory(this.value)">
-              ${printOptions()}
-            </select>
+                ${printOptions()}
+              </select>
               </div>
       </div>
       `
