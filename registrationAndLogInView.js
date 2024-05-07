@@ -45,7 +45,7 @@ function updateRegistrationAndLogInView() {
                     <input onchange="logInInputUsername(this.value)" placeholder="Brukernavn">
                 </div>
                 <div class="bitOfAir">
-                    <input onchange="logInInputPassword(this.value)" placeholder="Passord">
+                    <input type="password" onchange="logInInputPassword(this.value)" placeholder="Passord">
                 </div>
                 <div class="bitOfAir">
                     <button onclick="login()">Logg Inn</button>
