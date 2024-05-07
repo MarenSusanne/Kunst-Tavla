@@ -35,7 +35,7 @@ function declineInputBuy(index) {
 
 function declineInputAuction(index) {
   model.data.auctionObjects.splice(index, 1);
-  updateAdminCheckpointView();
+  editAuctions();
 }
 
 //addSalesobjekt
@@ -142,7 +142,7 @@ function newInputArtist(inputValue) {
   updateView();
 }
 
-function clearInputs(){
+function clearInputs() {
   model.inputs.registerUser.fullNameInput = '';
   model.inputs.registerUser.email = '';
   model.inputs.registerUser.passwordInput = '';
